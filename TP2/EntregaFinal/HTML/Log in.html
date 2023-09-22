@@ -8,18 +8,39 @@
   <body>
 
     <div class="login-box">
-      <img src="../IMG/logo.png" class="avatar" alt="Avatar Image"> <!--CAMBIAR EL LOCO-->
-      <h1>Login Here</h1>
+      <img src="../IMG/logo.png" class="avatar" alt="Avatar Image"> <!--CAMBIAR EL LOgO-->
+      <h1>Inicia sesión</h1>
       <form>
-        <!-- USERNAME INPUT -->
-        <label for="username">Username</label>
-        <input type="text" placeholder="Enter Username">
-        <!-- PASSWORD INPUT -->
-        <label for="password">Password</label>
-        <input type="password" placeholder="Enter Password">
-        <input type="submit" value="Log In">
-        <a href="#">Lost your Password?</a><br> 
-        <a href="#">Don't have An account?</a>
+       
+        <!--BOX LOG IN WHIT SOCIAL MEDIA-->
+        <div class="logSocial">
+            <div class="LogGoogle">
+                <a href="#">Iniciar seccion con Google <img src="../IMG/google.jpg" class=" googleIMG" alt="Google img"></a> <br> 
+            </div>
+            <div class="FaceBook">
+                <a href="#">Iniciar seccion con FaceBook <img src="../IMG/facebook.png" class=" FaceIMG" alt="Face img"></a>  <br> 
+              
+            </div>
+        </div>
+
+         <!--BOX LOG IN WHIT USER-->
+         <div class="logUser">
+            
+            <!-- USERNAME INPUT -->
+            <label for="username">Usuario</label>
+            <input type="text" placeholder="Ingrese su usuario">
+
+            <!-- PASSWORD INPUT -->
+            <label for="password">Contraseña</label>
+            <input type="password" placeholder="Ingrese su contraseña">
+           
+        </div>
+        <input type="submit" value="Iniciar">
+
+        <div class="help">
+        <a href="#">¿Olvidaste tu contraseña? Recuperela aqui</a><br> 
+        <a href="../HTML/Sing in.html">¿No tiene cuenta? Haga una aqui</a>
+        </div>
       </form>
     </div>
   </body>
