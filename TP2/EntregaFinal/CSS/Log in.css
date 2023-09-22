@@ -62,7 +62,7 @@ body {
     border: none;
     outline: none;
     height: 40px;
-    background: #b80f22;
+    background: #1D467F;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -70,7 +70,7 @@ body {
   
   .login-box input[type="submit"]:hover {
     cursor: pointer;
-    background: #ffc107;
+    background: #4D72A4;
     color: #000;
   }
   
