@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: #2C1069;
+}
+h1, h2, p{font-family: Arial, Helvetica, sans-serif;}
+h1{
+    font-size: 32px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* header */
+header, header div{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div img {
+    width: auto;
+    height: 50px;
+}
+
+/* header icono usuario */
+.usuario img{
+    height: 40px;
+}
+
+/* header Menu hamburguesa */
+.icono-menu{
+    width: auto;
+    height: 50px;
+}
+
+/* header Menu Barra de busqueda */
+.buscar{
+    background: var(--blancos-25, rgba(255, 255, 255, 0.25));
+    width: 500px;
+    border-radius: 50px;
+}
+.buscar p, .buscar img,  .usuario img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.buscar img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+    height: auto;
+}
+
+/* carrusel */
+main section{
+    color: white;
+    border-radius: 5px;
+    margin: 25px 85px 5px 85px ;
+}
+
+section ul{
+    border-radius: 3px;
+    display: flex;
+    overflow-x: scroll ;
+    margin: 5px 0 0 0;
+}
+
+section ul::-webkit-scrollbar{
+    height: 7px;
+    background: #6F51AB;
+    border-radius: 3px;
+}
+
+section ul::-webkit-scrollbar-thumb{
+    background: #09AC00;
+    border-radius: 3px;
+}
+
+section ul li{
+    border-radius: 5px;
+    height: auto;
+    width: 200px;
+    flex: 0 0 200px;
+    background-color: #563798;
+    margin-right: 20px;
+}
+
+section ul li img{
+    display: block;
+    border-radius: 5px 5px 0 0 ;
+    width: 200px;
+}
+
+section ul li div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 5px;
+}
+
+section ul li div button{
+    padding: 0 3px;
+    background-color: #09AC00;
+    color: white;
+    border-radius: 3px;
+    max-width: 50%;
+}
