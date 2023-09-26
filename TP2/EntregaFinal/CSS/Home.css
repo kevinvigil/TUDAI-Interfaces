@@ -24,27 +24,60 @@ p{
 }
 
 /* header */
-header, header div{
+header, header > div{
     color: rgb(255, 255, 255);
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header div img {
+header > div > img {
     width: auto;
     height: 50px;
 }
 
+/* menu desplegable */
+.nav{
+    background-color: #6F51AB;
+    height: 697px;
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav > ul > li  button{
+    display: flex;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #1D467F;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    margin: 7px;
+    max-width: 250;
+}
+
+nav > ul > li  button > img{
+    width: 40px;
+    margin-right: 10px;
+}
+
 /* header icono usuario */
-.usuario img{
-    height: 40px;
+.usuario > img{
+    height: 30px;
 }
 
 /* header Menu hamburguesa */
 .icono-menu{
     width: auto;
-    height: 50px;
+    height: 40px;
 }
 
 /* header Menu Barra de busqueda */
@@ -53,11 +86,11 @@ header div img {
     width: 500px;
     border-radius: 50px;
 }
-.buscar p, .buscar img,  .usuario img{
+.buscar > p, .buscar > img,  .usuario > img{
     padding-left: 20px;
     padding-right: 20px;
 }
-.buscar img{
+.buscar > img{
     padding-top: 5px;
     padding-bottom: 5px;
     width: 30px;
@@ -65,31 +98,30 @@ header div img {
 }
 
 /* carrusel */
-main section{
+main > section{
     color: white;
     border-radius: 5px;
     margin: 25px 85px 5px 85px ;
 }
 
-section ul{
-    border-radius: 3px;
+main > section > ul{
     display: flex;
     overflow-x: scroll ;
     margin: 5px 0 0 0;
 }
 
-section ul::-webkit-scrollbar{
+main > section > ul::-webkit-scrollbar{
     height: 7px;
     background: #6F51AB;
     border-radius: 3px;
 }
 
-section ul::-webkit-scrollbar-thumb{
+main > section > ul::-webkit-scrollbar-thumb{
     background: #09AC00;
     border-radius: 3px;
 }
 
-section ul li{
+main > section > ul > li{
     border-radius: 5px;
     height: auto;
     width: 200px;
@@ -98,23 +130,58 @@ section ul li{
     margin-right: 20px;
 }
 
-section ul li img{
+main > section > ul > li > img{
     display: block;
     border-radius: 5px 5px 0 0 ;
-    width: 200px;
+    width: 100%;
+    height: 112.5px;
 }
 
-section ul li div{
+main > section > ul > li > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 5px;
 }
 
-section ul li div button{
+main > section > ul > li > div > p{max-width: 50%;}
+
+.btn-card{
     padding: 0 3px;
     background-color: #09AC00;
     color: white;
     border-radius: 3px;
     max-width: 50%;
+}
+
+.btn-card:hover{
+    background-color: #12D308;
+}
+
+/* footer */
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 30px 0 0 0;
+    padding: 10px;
+}
+
+footer img{
+    height: 45px;
+}
+
+footer > section{
+    width: 70%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > section > div > ul > li{
+    margin: 5px 0 5px 25px;
+    list-style: disc;
 }
