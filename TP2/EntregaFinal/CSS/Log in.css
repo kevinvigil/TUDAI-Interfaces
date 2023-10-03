@@ -6,8 +6,69 @@ body {
     font-family: sans-serif;
     height: 100vh;
   }
-  
+
+  /* pantalla de carga*/
+.pantalla-carga{
+  z-index: 2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  visibility: hidden;
+}
+
+.pantalla-carga.visible{
+  opacity: 1;
+  visibility: visible;
+}
+
+.cargando-conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.cargando-conteiner .cargando{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: solid 6px transparent;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  animation: cargador 1.2s linear infinite;
+}
+
+section.pantalla-carga > div{
+  display: flex;
+}
+
+section.pantalla-carga > div > h2{
+  counter-increment: calc(11);
+}
+
+@keyframes cargador {
+  0%{
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/*------------------------------------*/
   .login-box {
+    z-index: 1;
     width: 400px;
     height: 580px;
     background: #000;
@@ -96,7 +157,7 @@ body {
     border: 1px solid #fff;
     margin: 5%;
     padding: 5%;
-/* hay un problema con el espacio de arriba, no se como solucionarlo*/
+    /* hay un problema con el espacio de arriba, no se como solucionarlo*/
   }
   .logSocial a{
     border: none;
@@ -130,3 +191,4 @@ body {
     top: 15px;
  }
  
+

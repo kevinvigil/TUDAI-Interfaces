@@ -1,7 +1,5 @@
 const nav = document.querySelector("#nav");
-const body = document.querySelector("#body");
 const abrir = document.querySelector("#abrir");
-j = false;
 
 abrir.addEventListener("click", () => {
     event.stopPropagation();

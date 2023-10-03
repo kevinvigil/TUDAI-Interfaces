@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="../CSS/Log in.css">
   </head>
   <body>
+    
+    <section id="pantalla-carga" class="pantalla-carga">
+      <h1>Cargando</h1>
+      <div>
+        <h2 id="numero">00</h2><h2>%</h2>
+      </div>
+      <div class="cargando-conteiner">
+        <div class="cargando"></div>
+      </div>
+    </section>
 
     <div class="login-box">
       <img src="../IMG/logo.png" class="avatar" alt="Avatar Image"> <!--CAMBIAR EL LOgO-->
@@ -35,7 +45,7 @@
             <input type="password" placeholder="Ingrese su contraseña">
            
         </div>
-        <input type="submit" value="Iniciar" href="../HTML/Home.html" >
+        <button id="cargando">Crear</button>
         
         <div class="help">
         <a href="#">¿Olvidaste tu contraseña? Recuperela aqui</a><br> 
@@ -43,5 +53,6 @@
         </div>
       </form>
     </div>
+    <script src="..\JS\Log.js"></script>
   </body>
 </html>

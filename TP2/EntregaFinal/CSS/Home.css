@@ -9,7 +9,10 @@
 body{
     background-color: #2C1069;
 }
-h1, h2, p{font-family: Arial, Helvetica, sans-serif;}
+h1, h2, p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
 h1{
     font-size: 32px;
     font-weight: bolder;
@@ -21,7 +24,10 @@ h2{
 p{
     font-size: 13px;
     font-weight: normal;
+    
 }
+
+
 
 /* header */
 header, header > div{
@@ -36,7 +42,7 @@ header > div > img {
     height: 50px;
 }
 
-/* menu desplegable */
+    /* menu desplegable */
 .nav{
     background-color: #6F51AB;
     height: 697px;
@@ -69,27 +75,29 @@ nav > ul > li  button > img{
     margin-right: 10px;
 }
 
-/* header icono usuario */
+    /* header icono usuario */
 .usuario > img{
     height: 30px;
 }
 
-/* header Menu hamburguesa */
+    /* header Menu hamburguesa */
 .icono-menu{
     width: auto;
     height: 40px;
 }
 
-/* header Menu Barra de busqueda */
+    /* header Menu Barra de busqueda */
 .buscar{
     background: var(--blancos-25, rgba(255, 255, 255, 0.25));
     width: 500px;
     border-radius: 50px;
 }
+
 .buscar > p, .buscar > img,  .usuario > img{
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .buscar > img{
     padding-top: 5px;
     padding-bottom: 5px;
