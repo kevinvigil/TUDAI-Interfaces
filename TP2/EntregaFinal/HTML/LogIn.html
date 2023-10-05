@@ -23,34 +23,44 @@
       <form>
        
         <!--BOX LOG IN WHIT SOCIAL MEDIA-->
-        <div class="logSocial">
-            <div class="LogGoogle">
-                <a href="#">Iniciar seccion con Google <img src="../IMG/google.jpg" class=" googleIMG" alt="Google img"></a> <br> 
+        <section class="logSocial">
+            <div id="cargando">
+                <a href="#"><p>Iniciar seccion con Google </p><img src="../IMG/google.jpg" class=" googleIMG" alt="Google img"></a>
             </div>
-            <div class="FaceBook">
-                <a href="#">Iniciar seccion con FaceBook <img src="../IMG/facebook.png" class=" FaceIMG" alt="Face img"></a>  <br> 
-              
+            <div id="cargando">
+                <a href="#"><p>Iniciar seccion con FaceBook </p><img src="..\IMG\redes\face-color.png" class=" FaceIMG" alt="Face img"></a>
             </div>
-        </div>
+        </section>
 
-         <!--BOX LOG IN WHIT USER-->
-         <div class="logUser">
-            
-            <!-- USERNAME INPUT -->
-            <label for="username">Usuario</label>
-            <input type="text" placeholder="Ingrese su usuario">
+        <!--BOX LOG IN WHIT USER-->
+        <section class="logUser">
+          
+          <!-- USERNAME INPUT -->
+          <label for="username">Usuario</label>
+          <input type="text" placeholder="Ingrese su usuario" required>
 
-            <!-- PASSWORD INPUT -->
-            <label for="password">Contraseña</label>
-            <input type="password" placeholder="Ingrese su contraseña">
-           
-        </div>
-        <button id="cargando">Crear</button>
+          <!-- PASSWORD INPUT -->
+          <label for="password">Contraseña</label>
+          <input type="password" placeholder="Ingrese su contraseña" required>
+
+          <div>
+            <button id="cargando" type="submit"><h2>Crear</h2></button>
+          </div>
         
-        <div class="help">
-        <a href="#">¿Olvidaste tu contraseña? Recuperela aqui</a><br> 
-        <a href="SingIn.html">¿No tiene cuenta? Haga una aqui</a>
-        </div>
+        </section>
+
+        <section class="IniciarSesion">
+          <a href="#">
+            <p>
+              ¿Olvidaste tu contraseña? Recuperela aqui
+            </p>
+          </a>
+          <a href="SingIn.html">
+            <p>
+              ¿No tiene cuenta? Haga una aqui
+            </p>
+          </a>
+        </section>
       </form>
     </div>
     <script src="..\JS\Log.js"></script>
