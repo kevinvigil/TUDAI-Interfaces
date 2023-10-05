@@ -1,15 +1,22 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url(../IMG/bn.jpeg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  background: url(../IMG/bn.png) center fixed ;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  color: #ffffff;
+}
+h1, h2 ,p{
+  margin: 0px;
+}
+h1{font-size: 32px;}
+h2{font-size: 20px;}
+p{font-size: 13px;}
 
-  /* pantalla de carga*/
+/* pantalla de carga*/
 .pantalla-carga{
-  z-index: 2;
+  z-index: 3;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -48,14 +55,11 @@ body {
   border-left-color: #ffffff;
   border-radius: 50%;
   animation: cargador 1.2s linear infinite;
+  /* animation-duration: 5s; */
 }
 
 section.pantalla-carga > div{
   display: flex;
-}
-
-section.pantalla-carga > div > h2{
-  counter-increment: calc(11);
 }
 
 @keyframes cargador {
@@ -66,129 +70,144 @@ section.pantalla-carga > div > h2{
       transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+
 /*------------------------------------*/
-  .login-box {
-    z-index: 1;
-    width: 400px;
-    height: 580px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-  }
-  
-  .login-box .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-  }
-  
-  .login-box h1 {
-    margin: 0;
-    padding: 0 0 0px;
-    text-align: center;
-    font-size: 22px;
-  }
-  
-  .login-box label {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .login-box input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .login-box input[type="text"], .login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .login-box input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #1D467F;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-  }
-  
-  .login-box input[type="submit"]:hover {
-    cursor: pointer;
-    background: #4D72A4;
-    color: #000;
-  }
-  
-  .help a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-  }
-  
-  .help a:hover {
-    color: #fff;
-  }
+.login-box {
+  z-index: 1;
+  width: 400px;
+  height: auto;
+  background: #000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  left: calc(50% - 50px);
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 50px 30px 30px 30px;
+}
 
-  .logUser{
-    border-radius: 10px;
-    border: 1px solid #fff;
-    margin: 5%;
-    padding: 5%;
-  }
-  .logSocial{
-    border-radius: 10px;
-    border: 1px solid #fff;
-    margin: 5%;
-    padding: 5%;
-    /* hay un problema con el espacio de arriba, no se como solucionarlo*/
-  }
-  .logSocial a{
-    border: none;
-    background: transparent;
-    outline: none;
-    color: darkgrey;
-    font-size: 16px;
-    text-decoration: none;
-    
-  }
+form > section{margin: 5%;}
 
-  .logSocial a :hover{
-    color: #fff;
-  }
+section.IniciarSesion > a{
+  color: #ffffff;
+  text-decoration: none;
+}
+section.IniciarSesion{
+  margin-bottom: 4px;
+}
+  
+.login-box > .avatar {
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
 
- .logSocial .googleIMG{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
-    left: 40px;
-    top: 15px;
- }
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 0px;
+  text-align: center;
+}
 
-  .logSocial .FaceIMG{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
-    left: 19px;
-    top: 15px;
- }
- 
+.logUser{
+  background: var(--blancos-25, rgba(255, 255, 255, 0.25));
+  border-radius: 10px;
+  border: 2px solid #fff;
+  padding: 5%;
+}
+
+.login-box > form > section.logUser > label {
+  margin: 0;
+  padding: 0 0 1px 3px;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  height: 25px;
+  background: var(--blancos-75, rgba(255, 255, 255, 0.90));
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.login-box input::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0.75);
+  padding-left: 3px;
+  font-size: 13px;
+}
+
+section.logUser > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.logUser > div > button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  background: #1D467F;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+section.logUser div button:hover {
+  cursor: pointer;
+  background: #4D72A4;
+}
+
+/*listo ---------------------------------*/
+.logSocial{
+  background: var(--blancos-25, rgba(255, 255, 255, 0.25));
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-top: 0px;
+}
+
+.logSocial > div{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border: solid 2px #ffffff;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.logSocial > div > a{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+
+.logSocial > div > a > p{
+  position: relative;
+  left: 12px;
+}
+
+.logSocial .googleIMG, .logSocial .FaceIMG{
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  right: 2.5px;
+}
+
 

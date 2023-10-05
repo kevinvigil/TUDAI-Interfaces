@@ -14,17 +14,13 @@ carga.addEventListener("click", () => {
             if (numero) {
                 numero.textContent=catidad;
             }
-            
             if (catidad === 100) {
                 clearInterval(tiempo);
             }
-            
-
         }, 50)
+
         setTimeout(function goHome() {
             location.href="Home.html"
         }, 5000);
-    
     }
-    
 )

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Singin Form Design One | Fazt</title>
+    <link rel="stylesheet" href="../CSS/Log in.css">
+  </head>
+  <body>
+
+    <section id="pantalla-carga" class="pantalla-carga">
+      <h1>Cargando</h1>
+      <div>
+        <h2 id="numero">00</h2><h2>%</h2>
+      </div>
+      
+      <div class="cargando-conteiner">
+        <div class="cargando"></div>
+      </div>
+    </section>
+
+    <div class="login-box">
+      <img src="../IMG/logo.png" class="avatar" alt="Avatar Image"> 
+      
+
+      <form>
+        <legend><h1>Inicia sesión</h1></legend>
+        <!--BOX LOG IN WHIT SOCIAL MEDIA-->
+        
+        <section class="IniciarSesion">
+          <a href="LogIn.html">
+            <p>
+              ¿Ya tienes cuenta? Iniciar sesion
+            </p>
+          </a>
+        </section>
+        <section class="logSocial">
+          <div>
+              <a href="#"><p>Crear cuenta con Google</p> <img src="../IMG/google.jpg" class=" googleIMG" alt="Google img"></a>
+          </div>
+          <div>
+              <a href="#"><p>Crear cuenta con FaceBook</p> <img src="../IMG/facebook.png" class=" FaceIMG" alt="Face img"></a>
+            
+          </div>
+        </section>
+
+         <!--BOX LOG IN WHIT USER-->
+        <section class="logUser">
+              
+          <!-- NOMBRE INPUT -->
+          <label for="name">Nombre </label>
+          <input type="name" placeholder="Ingrese su nombre" required>
+          <!-- APELLIDO INPUT -->
+          <label for="Surname">Apellido</label>
+          <input type="Surname" placeholder="Ingrese su apellido" required>
+          <!-- NACIMIENTO INPUT -->
+          <label for="start">Nacimiento</label>
+          <input type="date" id="start" name="trip-start" value="2001-07-22" min="1900-01-01" max="2023-12-31" required>
+          <!-- USERNAME INPUT -->
+          <label for="username">Usuario</label>
+          <input type="text" placeholder="Ingrese su nuevo usuario">
+          <!-- MAIL INPUT -->
+          <label for="mail">Mail</label>
+          <input type="mail" placeholder="Ingrese su mail" required>
+          <!-- PASSWORD  INPUT -->
+          <label for="password">Contraseña</label>
+          <input type="password" placeholder="Ingrese su contraseña" required>
+          <!-- PASSWORD REPEAT INPUT -->
+          <label for="password">Repetir la contraseña</label>
+          <input type="password" placeholder="Ingrese de nuevo su contraseña" required>
+          <div>
+            <button id="cargando" type="submit"><h2>Crear</h2></button>
+          </div>
+              
+        </section>
+      </form>
+    </div>
+    <script src="..\JS\Log.js"></script>
+  </body>
+</html>
