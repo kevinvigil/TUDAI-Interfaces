@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #2C1069;
+}
+h1, h2, p{
+    color: #ffffff;
+}
+h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 15px;
+    font-weight: bold;
+}
+p{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+
+
+/* header */
+header, header > div{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > div > img {
+    width: auto;
+    height: 50px;
+}
+
+    /* menu desplegable */
+.nav{
+    background-color: #6F51AB;
+    height: 697px;
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav > ul > li > a{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    padding: 7px 10px;
+    max-width: 250px;
+    border-bottom:2px solid #000000;
+}
+
+nav > ul > li > a > img{
+    display: block;
+    width: 25px;
+    margin-right: 3px;
+}
+
+nav > ul > li > p{
+    display: block;
+}
+
+    /* header icono usuario */
+.usuario > img{
+    height: 30px;
+}
+
+.usuario > p{
+    display: none;
+}
+
+    /* header Menu hamburguesa */
+.icono-menu{
+    width: auto;
+    height: 40px;
+}
+
+    /* header Menu Barra de busqueda */
+
+.buscar > p, .buscar > img,  .usuario > img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buscar > p{
+    display: none;
+}
+
+.buscar > img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+    height: auto;
+}
+img{
+    height: 500px;
+}
+/* main*/
+.Game{
+    display: flex;
+}
+.juego {
+    background-color: lightskyblue; /* no me toma el color del figma*/
+    margin: 30px;
+   
+}
+.juego .title-game{
+    display: flex;
+    padding-right: 6px;
+    margin: auto;
+    
+}
+.juego .chosee-Player{
+    margin: 30px;
+}
+.juego  .title-game img{
+    height: 45px;
+    float: right;
+    margin: auto;
+}
+
+
+.right img{
+    height: 200px;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 30px 0 0 0;
+    padding: 10px;
+}
+
+footer img{
+    height: 45px;
+}
+
+footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > section > div > ul > li{
+    margin: 5px 0 5px 25px;
+    list-style: disc;
+}
