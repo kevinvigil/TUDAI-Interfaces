@@ -111,14 +111,18 @@ nav > ul > li > p{
 }
 
 /* main*/
+
+/*juego*/
 .Game{
     display: flex;
 }
+
 .juego {
     background-color: #7FB3D5; 
     margin: 30px;
    
 }
+
 .juego .title-game{
     display: flex;
     padding-right: 6px;
@@ -134,6 +138,7 @@ nav > ul > li > p{
     margin: auto;
     margin-right: 0px;
 }
+
 .btn-choose-player{
     background-color: #000000;
     border-radius: 15px;
@@ -143,7 +148,11 @@ nav > ul > li > p{
     margin-bottom: 5px;
 } 
 
+
+
+
 /*.btn-choose-Ronaldo{
+>>>>>>> 6a790bb990da310c2174f193c03a190074bcf515
     height: 45px;
     padding-left:50px;
     padding-right: 50px;
@@ -154,9 +163,11 @@ nav > ul > li > p{
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .btn-choose-Ronaldo:hover{
     background-color: #CD6155;
 }
+
 .btn-choose-Messi{
     height: 45px;
     padding-left:50px;
@@ -165,30 +176,37 @@ nav > ul > li > p{
     border-radius: 15px;
     margin-bottom: 10px;    
 }
+
 .btn-choose-Messi:hover{
     background-color: #3498DB;
-}*/
+}
+/*
+.btn-choose-player{
+    display: flex ;
+}
 
 .btn-choose-Ronaldo{
     transition: all 0.6s ease;
     z-index: 1;
 }
+
 .btn-choose-Ronaldo::after{
     content: "";
-    position: absolute;
-    width: 10%;
-    height: 10%;
+    position: relative;
+    width: 50%;
+    height: 50%;
     left: -10%;
     top: 0;
-    background-color: #ffffff;
+    background-color: red;
     transform: skew(20deg, 0deg);
     transition: all 0.4s ease;
 }
+
 .btn-choose-Ronaldo::before{
     content: "";
-    position: absolute;
-    width: 10%;
-    height: 10%;
+    position: relative;
+    width: 50%;
+    height: 50%;
     left: 0;
     top: 0;
     transform: skew(20deg, 0deg);
@@ -196,48 +214,127 @@ nav > ul > li > p{
     transition: all 0.4s ease;
     z-index: -1;
 }
+
 .btn-choose-Ronaldo:hover::after{
     background-color: chartreuse;
     transform: skew(20deg, 0deg) translateX(220px);
 }
+
 .btn-choose-Ronaldo:hover::before{
     background-color: cornflowerblue;
     border: 3px solid #6F51AB;
     transform: skew(20deg, 0deg)scale(1.1);
 }
-
-
-
-
-
-
+*/
+/*introduccion y como jugar al juego*/
 .right{
     position: absolute;
     width: 300px;
     height: 50px;
     left: 950px;
-    top: 75px;
-    
+    top: 75px;   
 }
+
 .right p{
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
 .right img{
     height: fit-content;
     margin-left: 10px;
     margin-bottom: 10px;
     
 }
+
 .img-how-to-play{
     border-radius: 3px;
 }
 
+
+/*comentarios*/
+
+.comentarios{
+    background-color: #7FB3D5;
+    margin-right: 425px;
+    margin-left: 30px;
+    padding: 20px 20px 20px 20px;
+}
 .video{
     z-index: 0;
     position: relative;
 }
+.video{
+    z-index: 0;
+    position: relative;
 
+}
+
+.title-comentario{
+    display: flex;
+}
+.title-comentario img{
+    height: 45px;
+}
+.title-comentario h1{
+    padding: 13px;
+}
+.comentar{
+    margin: 20px;;
+    background-color: #6F51AB;
+    padding: 5px;  
+}
+.comentar img{
+    height: 20px;
+}
+.own-comment{
+    display: flex;
+    border-bottom: 5px greenyellow;
+}
+.own-comment button{
+    background-color: greenyellow;
+    margin-left: 700px;
+    padding: 2px;
+    border-radius: 2px;
+}
+.input-comment{
+    margin: 5px 20px 5px 20px;
+}
+.input{
+    padding: 100%;
+}
+.populares{
+    margin-left: 350px;
+    border-bottom:5px #000000;
+}
+.comentario-1{
+    margin: 20px;;
+    background-color: #6F51AB;
+    padding: 5px;
+}
+.comentario-1 img{
+    height: 20px;
+}
+.comentario-1 p{
+    margin: 5px 20px 5px 20px;
+}
+.title-comentario-1{
+    display: flex;
+}
+.comentario-2{
+    margin: 20px;;
+    background-color: #6F51AB;
+    padding: 5px;
+}
+.title-comentario-2{
+    display: flex;
+}
+.comentario-2 p{
+    margin: 5px 20px 5px 20px;
+}
+.comentario-2 img{
+    height: 20px;
+}
 
 /* footer */
 
