@@ -17,15 +17,15 @@ h2, p{
     color: #ffffff;
 }
 h1{
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bolder;
 }
 h2{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 p{
-    font-size: 10px;
+    font-size: 13px;
     font-weight: normal;
 }
 
@@ -39,12 +39,44 @@ header, header > div{
     align-items: center;
     justify-content: space-between;
 }
+
 header > div > img {
-    width: auto;
     height: 50px;
 }
 
-    /* menu desplegable */
+.buscar{
+    background: var(--blancos-25, rgba(255, 255, 255, 0.25));
+    width: 500px;
+    border-radius: 50px;
+}
+
+/* header icono usuario */
+.usuario > img, .buscar > img{
+    height: 30px;
+}
+
+/* header Menu hamburguesa */
+.icono-menu{
+    height: 40px;
+}
+
+/* header Menu Barra de busqueda */
+.buscar > p, .buscar > img,  .usuario > img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buscar > img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+    height: auto;
+}
+img{
+    height: 500px;
+}
+
+/* menu desplegable */
 .nav{
     background-color: #6F51AB;
     height: 697px;
@@ -76,42 +108,6 @@ nav > ul > li > a > img{
 
 nav > ul > li > p{
     display: block;
-}
-
-    /* header icono usuario */
-.usuario > img{
-    height: 30px;
-}
-
-.usuario > p{
-    display: none;
-}
-
-    /* header Menu hamburguesa */
-.icono-menu{
-    width: auto;
-    height: 40px;
-}
-
-    /* header Menu Barra de busqueda */
-
-.buscar > p, .buscar > img,  .usuario > img{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.buscar > p{
-    display: none;
-}
-
-.buscar > img{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 30px;
-    height: auto;
-}
-img{
-    height: 500px;
 }
 
 /* main*/
@@ -234,7 +230,7 @@ img{
     
 }
 .img-how-to-play{
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .video{
@@ -254,14 +250,14 @@ footer{
     justify-content: space-between;
     align-items: start;
     margin: 30px 0 0 0;
-    padding: 10px;
+    padding: 20px;
 }
 
 footer img{
     height: 30px;
 }
 
-footer > section > div > ul > li{
+footer > section ul > li{
     margin: 5px 0 5px 25px;
     list-style: disc;
 }
