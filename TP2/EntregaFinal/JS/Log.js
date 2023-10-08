@@ -1,11 +1,12 @@
+window.onload;
 
-const carga = document.querySelector("#cargando");
+const carga = document.querySelectorAll("#cargando");
 const pantalla = document.querySelector("#pantalla-carga");
 const numero = document.querySelector("#numero");
 
 carga.addEventListener("click", () => {
-        pantalla.classList.add("visible");
         event.preventDefault();
+        pantalla.classList.add("visible");
         
         let catidad = 0;
         let tiempo = setInterval(() => {
@@ -24,3 +25,4 @@ carga.addEventListener("click", () => {
         }, 5000);
     }
 )
+
