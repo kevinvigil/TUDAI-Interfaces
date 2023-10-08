@@ -1,4 +1,3 @@
-window.onload;
 
 const carga = document.querySelectorAll("#cargando");
 const pantalla = document.querySelector("#pantalla-carga");
