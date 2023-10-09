@@ -30,6 +30,9 @@ p{
 }
 
 
+body > article.breadcrumbs{
+    padding: 5px;
+}
 
 /* header */
 header, header > div{
