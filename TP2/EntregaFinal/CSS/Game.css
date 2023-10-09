@@ -185,10 +185,12 @@ nav > ul > li > p{
     margin-left: 30px;
     padding: 20px 20px 20px 20px;
 }
+
 .video{
     z-index: 0;
     position: relative;
 }
+
 .video{
     z-index: 0;
     position: relative;
@@ -202,22 +204,27 @@ nav > ul > li > p{
 .title-comentario img{
     height: 45px;
 }
+
 .title-comentario h1{
     padding-left: 290px;
     
 }
+
 .comentar{
     margin: 20px;;
     background-color: #6F51AB;
     padding: 5px;  
 }
+
 .comentar img{
     height: 20px;
 }
+
 .own-comment{
     display: flex;
     border-bottom: 2px solid #12D308 ;
 }
+
 .own-comment button{
     background-color: #12D308;
     margin-left: 700px;
@@ -225,6 +232,7 @@ nav > ul > li > p{
     border-radius: 2px;
     color: #ffffff;
 }
+
 .input-comment{
     margin: 5px 20px 5px 20px;  
 }
@@ -233,34 +241,40 @@ nav > ul > li > p{
     margin-left: 350px;
     border-bottom:5px #000000;
 }
+
 .comentario-1{
     margin: 20px;;
     background-color: #6F51AB;
     padding: 5px;
 }
+
 .comentario-1 img{
     height: 20px;
 }
+
 .comentario-1 p{
     margin: 5px 20px 5px 20px;
 }
+
 .comentario-1 a{
     margin-left: 650px;
 }
+
 .title-comentario-1{
     display: flex;
     border-bottom: 2px solid #12D308 ;
 }
+
 .comentario-2{
     margin: 20px;;
     background-color: #6F51AB;
     padding: 5px;
     display: block;
 }
+
 .title-comentario-2{
     display: flex;
     border-bottom: 2px solid #12D308 ;
-    
 }
 .comentario-2 p{
     margin: 5px 20px 5px 20px;
