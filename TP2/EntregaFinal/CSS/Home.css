@@ -54,7 +54,6 @@ header > div > img {
 
 .nav.visible{
     opacity: 1;
-    visibility: visible;
 }
 
 nav > ul > li > a{
@@ -125,9 +124,6 @@ body > article.irAPagar{
     visibility: hidden;
 }
 
-.irAPagar.visible{
-    visibility: visible;
-}
 body > article.irAPagar > div{
     padding: 5px 0;
     display: flex;
@@ -260,6 +256,18 @@ main > section ul > li > div > p{max-width: 50%;}
 
 .btn-card:hover{
     background-color: #12D308;
+}
+
+.btn-card .carritoCartImg{
+    position: absolute;
+}
+
+.visible{
+    visibility: visible !important;
+}
+
+.noVisible{
+    visibility: hidden !important;
 }
 
 main div.animacion{
