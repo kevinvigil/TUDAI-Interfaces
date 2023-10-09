@@ -142,7 +142,6 @@ section.IniciarSesion{
 .login-box input::-webkit-input-placeholder{
   color: rgba(0, 0, 0, 0.75);
   padding-left: 3px;
-  font-size: 13px;
 }
 
 section.logUser > div{
@@ -150,6 +149,29 @@ section.logUser > div{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section.logUser  div.noRobot{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 15px 0;
+  width: 80%;
+  height: 60px;
+  background-color: #4d4d4d;
+}
+
+section.logUser div.noRobot input{
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+section.logUser div.noRobot img{
+  border-radius: 35%;
+  display: block;
+  width: 50px;
+  height: auto;
 }
 
 section.logUser > div > button {
@@ -191,7 +213,6 @@ section.logUser div button:hover {
   width: 100%;
   align-items: center;
   color: #000000;
-  font-size: 16px;
   text-decoration: none;
 }
 
@@ -202,7 +223,7 @@ section.logUser div button:hover {
   left: 12px;
 }
 
-.logSocial .googleIMG, .logSocial .FaceIMG{
+.logSocial .googleIMG, .logSocial .FaceIMG, div.noRobot img{
   display: block;
   position: relative;
   width: 35px;
