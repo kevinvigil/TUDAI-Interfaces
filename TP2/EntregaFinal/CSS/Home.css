@@ -85,14 +85,13 @@ nav > ul > li > p{
     display: none;
 }
 
-    /* header Menu hamburguesa */
+/* header Menu hamburguesa */
 .icono-menu{
     width: auto;
     height: 40px;
 }
 
-    /* header Menu Barra de busqueda */
-
+/* header Menu Barra de busqueda */
 .buscar > p, .buscar > img,  .usuario > img{
     padding-left: 20px;
     padding-right: 20px;
@@ -110,6 +109,70 @@ nav > ul > li > p{
 }
 img{
     width: 30px;
+}
+
+body > article.breadcrumbs{
+    padding: 5px;
+}
+
+body > article.irAPagar{
+    background-color: #335B92;
+    width: fit-content;
+    border: solid 1px #000000;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+.irAPagar.visible{
+    visibility: visible;
+}
+body > article.irAPagar > div{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #000000 solid 1px;
+}
+
+body > article.irAPagar > div > button{
+    color: #ffffff;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: #09AC00;
+}
+
+body > article.irAPagar > div > button:hover{
+    background-color: #12D308;
+}
+
+body > article.irAPagar > section{
+    background-color: #4D72A4;
+    border-bottom: solid 1px #000000;
+    position: relative;
+    height: 70px;
+    width: 350px;
+}
+
+body > article.irAPagar > section > img{
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+body > article.irAPagar > section > p.precio{
+    position: absolute;
+    bottom: 7%;
+    right: 10px;
+}
+
+body > article.irAPagar > section > p.nombreJuego{
+    position: absolute;
+    top: 7%;
+    left: 30%;
 }
 
 /* carrusel */

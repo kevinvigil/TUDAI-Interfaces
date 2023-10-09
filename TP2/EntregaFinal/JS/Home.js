@@ -1,17 +1,36 @@
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
+
+const irAPagar= document.querySelector("#irAPagar");
+const iconoCarrito= document.querySelector("#iconoCarrito");
+
 let flechaIzq = document.querySelectorAll("img.flechaIzq");
 let flechaDer = document.querySelectorAll("img.flechaDer");
 let carrucel = document.querySelector(".carrucel");
 
 abrir.addEventListener("click", () => {
     event.stopPropagation();
-    nav.classList.add("visible");
+    if (nav.classList.contains("visible")) {
+        nav.classList.remove("visible");
+    } else {
+        nav.classList.add("visible");
+    }
+});
+
+iconoCarrito.addEventListener("click", () => {
+    event.stopPropagation();
+    if (irAPagar.classList.contains("visible")) {
+        irAPagar.classList.remove("visible");
+    } else {
+        irAPagar.classList.add("visible");
+    }
+    
 
 });
 
 window.onclick = function name(e) {
     nav.classList.remove("visible");
+    irAPagar.classList.remove("visible");
 }
 
 function carrucelMove(cant){
