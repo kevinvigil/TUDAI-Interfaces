@@ -84,7 +84,7 @@ section.pantalla-carga > div{
   transform: translate(-50%, -50%);
   top: 70%;
   left: 50%;
-  left: calc(50% - 50px);
+  right: 50%;
   box-sizing: border-box;
   border-radius: 20px;
   padding: 50px 30px 30px 30px;
@@ -97,7 +97,7 @@ section.IniciarSesion > a{
   text-decoration: none;
 }
 section.IniciarSesion{
-  margin-bottom: 4px;
+  margin: 4px 4px 4px 5%;
 }
   
 .login-box > .avatar {
@@ -167,32 +167,12 @@ section.logUser div button:hover {
   cursor: pointer;
   background: #4D72A4;
   display: inline-block;
-  transform: perspective(1px) translateZ(0);
 }
 
-.efecto:hover, .efecto:focus, .efecto:active{
-  animation-name: efectoButon;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-
-@keyframes efectoButon{
-  17%{transform: translateY(8px);}
-  34%{transform: translateY(-6px);}
-  50%{transform: translateY(4px);}
-  67%{transform: translateY(-2px);}
-  84%{transform: translateY(1px);}
-  100%{transform: translateY(0px);}
-} 
-
-
-/*listo ---------------------------------*/
 .logSocial{
   background: var(--blancos-25, rgba(255, 255, 255, 0.25));
   border-radius: 10px;
   border: 2px solid #fff;
-  margin-top: 0px;
 }
 
 .logSocial > div{
