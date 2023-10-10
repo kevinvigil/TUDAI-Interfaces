@@ -4,19 +4,22 @@ const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 
 const envarAmigos= document.querySelector("#envarAmigos");
-const compartir= document.querySelector("#compartir");
+const compartir= document.querySelector("#compartirr");
 
 const irAPagar= document.querySelector("#irAPagar");
 const iconoCarrito= document.querySelector("#iconoCarrito");
 
-envarAmigos.addEventListener("click", () => {
-    compartir.classList.add("visible");
+compartir.addEventListener("click", () => {
+    event.stopPropagation();
+    envarAmigos.classList.add("visible");
 });
 
 abrir.addEventListener("click", () => {
+    event.stopPropagation();
     nav.classList.add("visible");
 
 });
+
 
 iconoCarrito.addEventListener('click', () => {
     event.stopPropagation();
@@ -30,5 +33,5 @@ iconoCarrito.addEventListener('click', () => {
 window.onclick = function name(e) {
     nav.classList.remove("visible");
     irAPagar.classList.remove("visible");
-    compartir.classList.remove("visible");
+    envarAmigos.classList.remove("visible");
 }
