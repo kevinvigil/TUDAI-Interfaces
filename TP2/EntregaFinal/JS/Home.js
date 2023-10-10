@@ -26,8 +26,6 @@ iconoCarrito.addEventListener('click', () => {
     } else {
         irAPagar.classList.add("visible");
     }
-    
-
 });
 
 window.onclick = function name(e) {
