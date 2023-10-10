@@ -75,12 +75,10 @@ header > div > img {
     width: 30px;
     height: auto;
 }
-img{
-    height: 500px;
-}
 
 /* menu desplegable */
 .nav{
+    z-index: 5;
     background-color: #6F51AB;
     height: 697px;
     display: flex;
@@ -106,6 +104,7 @@ nav > ul > li > a{
 nav > ul > li > a > img{
     display: block;
     width: 25px;
+    height: 25px;
     margin-right: 3px;
 }
 
@@ -113,113 +112,231 @@ nav > ul > li > p{
     display: block;
 }
 
+
+body > article.irAPagar{
+    z-index: 5;
+    background-color: #335B92;
+    width: fit-content;
+    border: solid 1px #000000;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible !important;
+}
+
+body > article.irAPagar > div{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #000000 solid 1px;
+}
+
+body > article.irAPagar > div > button{
+    color: #ffffff;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: #09AC00;
+}
+
+body > article.irAPagar > div > button:hover{
+    background-color: #12D308;
+}
+
+body > article.irAPagar > section{
+    background-color: #4D72A4;
+    border-bottom: solid 1px #000000;
+    position: relative;
+    height: 70px;
+    width: 350px;
+}
+
+body > article.irAPagar > section > img{
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+body > article.irAPagar > section > p.precio{
+    position: absolute;
+    bottom: 7%;
+    right: 10px;
+}
+
+body > article.irAPagar > section > p.nombreJuego{
+    position: absolute;
+    top: 7%;
+    left: 30%;
+}
+
 /* main*/
+/* envarAmigos */
+
+.envar-Amigos{
+    cursor: pointer;
+    background-color: #000000;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.envar-Amigos.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.enva-rAmigos img{
+    padding: 3px;
+    height: 50px;
+    width: 50px;
+}
 
 /*juego*/
 .Game{
     display: flex;
 }
 
+.left{
+    width: 70%;
+}
+
 .juego {
-    
-    background-color: #7FB3D5; 
-    margin: 3%;
-    margin-right: 0%;
+    margin: 30px 0 30px 30px;
+    height: fit-content;
 }
-.chosee-Player .img-choose-player{
-  
-    margin-right: 30%;/*VER QUE ESTA PASANDO ACA, NO PUEDO HACER QUE AL IMAGEN QUEDE BIEN*/
-}
+
 .juego .title-game{
+    background-color: #7FB3D5; 
     display: flex;
-    padding-right: 2%;
-    margin: 3%;
-    padding-left:7%;
-    margin-bottom: 0%;
-    border-radius: 1px;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 .juego .title-game img{
+    cursor: pointer;
     height: 30px;
-    float: right;
     margin: auto;
     margin-right: 0px;
 }
 
+.chosee-Player{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.img-choose-player img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .btn-choose-player{
+    z-index: 3;
+    position: absolute;
+    height: 60px;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #000000;
     border-radius: 15px;
-    margin-right: 30px;
-    margin-bottom: 5px;
     display: flex;
     color: #ffffff;
 } 
-.btn-choose-Ronaldo{
-    height: 45px;
-    padding-left:50px;
-    padding-right: 50px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+
+ .btn-choose{
+    position: relative;
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 5px;
 }
-.btn-choose-Ronaldo:hover{
-    background-color: #CD6155;
+
+.btn-choose button{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform:  uppercase;
+    letter-spacing: 3px;
+    background: transparent;
 }
-.btn-choose-Messi{
-    height: 45px;
-    padding-left:50px;
-    border-radius: 15px;
-    margin-bottom: 10px;    
+
+.btn-choose button::after, .btn-choose button::before{
+    content: '';
+    z-index: -2;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    transform: skewX(30deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.btn-choose-Messi:hover{
-    background-color: #3498DB;
+
+.btn-choose button::before{
+    background-color: #ffffff;
+    top: -0.5rem;
+    left: 0rem;
+}
+
+.btn-choose button::after{
+    background-color: #75AADB;
+    top: 0.5rem;
+    right:0rem;
+}
+
+.btn-choose button:hover::before, 
+.btn-choose button:hover::after{
+    top: 0;
+    filter: brightness(1.50);
+    transform: skewX(0deg);
 }
 /*introduccion y como jugar al juego*/
 .right{
-   
-    width: 3;
-    height: 5%;
-    padding-left: 6%;
-    margin-top: 0%;   
+    width: 30%;
+    padding: 30px;
 }
 
 .right p{
-    margin-left: 2%;
-    margin-bottom: 1%;
+    margin-left: 5px;
+    margin-bottom: 3px;
 }
 
 .right img{
+    width: 100%;
     height: fit-content;
-    margin-left: 1%;
-    margin-bottom: 1;
-    
 }
 
 .img-how-to-play{
     border-radius: 3px;
 }
 
-.video{
-    z-index: 0;
-    position: relative;
-}
-
-.video{
-    z-index: 0;
-    position: relative;
-
-}
 /*comentarios*/
 
 .comentarios{
     position: relative;
+    padding: 10px;
     background-color: #7FB3D5;
-    margin-right: 34%;
-    margin-left: 3%;
-    padding: 2% 2% 2% 2%;
 }
 
 .title-comentario{
     display: flex;
+    align-items: center;
 }
 
 .title-comentario img{
@@ -227,54 +344,67 @@ nav > ul > li > p{
 }
 
 .title-comentario h1{
-    padding-left: 2.90%;
-    
+    padding-left: 10px;
 }
 
 .comentar{
-    margin: 2%;;
+    margin: 5px 0;
     background-color: #6F51AB;
-    padding: 0.5%;  
+    padding: 5px;
 }
 
 .comentar img{
-    height: 20px;
+    height: 30px;
 }
 
 .own-comment{
-    display: flex;
-    border-bottom: 2px solid #12D308 ;
-}
+    position: relative;
 
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #09AC00 ;
+}
 .own-comment button{
-    background-color: #12D308;
-    margin-left: 1300%;
-    padding: 0.2%;
-    border-radius: 0.2%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    background-color: #09AC00;
+    border-radius: 3px;
+    padding: 2px;
     color: #ffffff;
 }
 
 .input-comment{
-    margin: 0.5% 2% 0.5% 2%;  
+    width: 100%;
+    margin: 3px;  
+}
+
+.input-comment input{
+    width: 75%;
 }
 
 .populares{
-    margin-left: 3.5%;
-    border-bottom:0.5% #000000;
+    width: 100%;
+    border-bottom: solid #000000;
+    display: flex;
+    justify-content: center;
 }
 
 .comentario-1{
-    margin: 2%;;
     background-color: #6F51AB;
-    padding: 0.5%;
+    padding: 3px;
+    margin: 7px 0;
 }
 
 .comentario-1 img{
-    height: 20px;
+    height: 30px;
 }
 
 .comentario-1 p{
-    margin: 0.5% 2% 0.5% 2%;
+    margin: 3px 7px;
 }
 
 .comentario-1 a{
@@ -283,16 +413,21 @@ nav > ul > li > p{
 
 .title-comentario-1{
     display: flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    display: flex;
     border-bottom: 2px solid #12D308 ;
 
 }
 
 
 .btn-like {
-    margin-left: 615px;
-    margin-bottom: 4px;
-    position: relative;
-    padding: 0px 10px 0px 10px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    border-radius: 3px;
     font-size: 25px;
     border: none;
     background: #12D308;

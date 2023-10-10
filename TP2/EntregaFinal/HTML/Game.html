@@ -18,39 +18,112 @@
             <img src="..\IMG\icono-buscar.png" alt="Icon-buscar">
         </div>
         <div class="usuario">
-            <img src="..\IMG\icono-carrito.png" alt="icono-carrito">
+            <img src="..\IMG\icono-carrito.png" id="iconoCarrito" alt="icono-carrito">
             <p>Kevin Vigil</p>
             <img src="..\IMG\icono-usuario1.png" alt="icono-usuario1">
         </div>
     </header>
+    <nav id="nav" class="nav">
+        <ul>
+            <li>
+                <a href="LogIn.html">
+                    <img src="..\IMG\iconos-menu\inicio.png" alt="inicio">
+                    <h2>Inicio</h2>
+                </a>
+            </li>
+            <li>
+                <a href="LogIn.html">
+                    <img src="..\IMG\iconos-menu\inicio.png" alt="inicio">
+                    <h2>Inicio hhhhhh h</h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <article id="irAPagar" class="irAPagar">
+        <div>
+            <button>Finalizar compra</button>
+        </div>
+        <section>
+            <img src="..\IMG\algunosJuegos\fireboy-and-watergirl.webp" alt="">
+            <p class="nombreJuego">Nombre juego</p>
+            <p class="precio">$2300</p>
+        </section>
+    </article>
     <article class="breadcrumbs">
         <p>Home > Juegos > 4 en linea</p>
     </article>
+    <article id="envarAmigos" class="envar-Amigos">
+        <img src="..\IMG\redes\facebook.png" alt="facebook">
+        <img src="..\IMG\redes\instagram.png" alt="instagram">
+        <img src="..\IMG\redes\telegram.png" alt="telegram">
+        <img src="..\IMG\redes\twiter.png" alt="twiter">
+    </article>
     <main>
         <div class="Game">
-            <div class="left">
-                <section>
-                    <div class="juego">
-                        <div class="title-game">
-                            <h1>Mundial Cuatro en linea</h1>
-                            <img src="../IMG/iconos-juego/compartir.png" alt="compartir">
+            <section class="left juego">
+                <div class="title-game">
+                    <h1>Mundial Cuatro en linea</h1>
+                    <img id="compartir" class="compartir" src="../IMG/iconos-juego/compartir.png" alt="compartir">
+                </div>
+                <div class="chosee-Player">
+                    <div class="img-choose-player">
+                        <img  src="../IMG/conquienjugar.png" alt="chosee-Player-img">
+                    </div>
+                    <div class="btn-choose-player">
+                        <div class="btn-choose Ronaldo">
+                            <button>RONALDO</button>
                         </div>
-                        <div class="chosee-Player">
-                            <div class="img-choose-player">
-                                <img  src="../IMG/conquienjugar.png" alt="chosee-Player-img">
-                            </div>
-                            <div class="btn-choose-player">
-                                <div class="btn-choose-Ronaldo">
-                                    <button ><p>RONALDO</p></button>
-                                </div>
-                                <div class="btn-choose-Messi">
-                                    <button ><p>MESSI</p></button>
-                                </div>
-                            </div>
+                        <div class="btn-choose Messi">
+                            <button >MESSI</button>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+                
+                <div class="comentarios">
+                    <div class="title-comentario">
+                        <img src="../IMG/iconos-juego/comentario.png" alt="img-comentario">
+                        <h1>Comentarios</h1>
+                    </div>
+                    <div class="comentar">
+                        <div class="own-comment">
+                            <img src="../IMG/icono-usuario1.png" alt="user">
+                            <h2>Tu</h2>
+                            <a href="">
+                                <button class="publicar">Publicar</button>
+                            </a>
+                            
+                        </div>
+                        <div class="input-comment">
+                            <h5>¿Que piensas del juego?</h5>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <h1 class="populares">Populares</h1>
+        
+                    <div class="comentario-1">
+                        <div class="title-comentario-1">
+                            <img src="../IMG/icono-usuario1.png" alt="user">
+                            <h2>harry_po</h2>
+                            <a href="" class="btn-like">
+                                <span></span><span></span><span></span><span></span>
+                                <img src="../IMG/iconos-juego/like.png" alt="">
+                            </a>                
+                        </div>
+                        <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
+                    </div>
+                    <div class="comentario-1">
+                        <div class="title-comentario-1">
+                            <img src="../IMG/icono-usuario1.png" alt="user">
+                            <h2>harry_po</h2>
+                            <a href="" class="btn-like">
+                                <span></span><span></span><span></span><span></span>
+                                <img src="../IMG/iconos-juego/like.png" alt="">
+                            </a>                
+                        </div>
+                        <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
+                    </div>
+                </div>
+            </section>
             <div class="right">
                 <section>
                     <div class="introduccion">
@@ -81,51 +154,6 @@
                 </section>
             </div>
         </div>
-
-        <div class="comentarios">
-            <div class="title-comentario">
-                <img src="../IMG/iconos-juego/comentario.png" alt="img-comentario">
-                <h1>Comentarios</h1>
-            </div>
-            <div class="comentar">
-                <div class="own-comment">
-                    <img src="../IMG/icono-usuario1.png" alt="user">
-                    <h2>Tu</h2>
-                    <a href="">
-                        <button class="publicar">Publicar</button>
-                    </a>
-                    
-                </div>
-                <div class="input-comment">
-                    <h5>¿Que piensas del juego?</h5>
-                    <input type="text">
-                </div>
-            </div>
-            <h1 class="populares">Populares</h1>
-
-            <div class="comentario-1">
-                <div class="title-comentario-1">
-                    <img src="../IMG/icono-usuario1.png" alt="user">
-                    <h2>harry_po</h2>
-                    <a href="" class="btn-like">
-                        <span></span><span></span><span></span><span></span>
-                        <img src="../IMG/iconos-juego/like.png" alt="">
-                    </a>                </div>
-                <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
-            </div>
-            <div class="comentario-1">
-                <div class="title-comentario-1">
-                    <img src="../IMG/icono-usuario1.png" alt="user">
-                    <h2>harry_po</h2>
-                    <a href="" class="btn-like">
-                        <span></span><span></span><span></span><span></span>
-                        <img src="../IMG/iconos-juego/like.png" alt="">
-                    </a>                </div>
-                <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
-            </div>
-           
-        </div>
-    
     </main>
     <footer>
         <section>
