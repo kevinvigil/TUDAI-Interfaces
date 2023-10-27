@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #2C1069;
+}
+h1{
+    color: #000000;
+}
+h2, p{
+    color: #ffffff;
+}
+h1{
+    font-size: 32px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+body > article.breadcrumbs{
+    padding: 5px;
+}
+
+/* header */
+header, header > div{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div > img {
+    height: 50px;
+}
+
+.buscar{
+    background: var(--blancos-25, rgba(255, 255, 255, 0.25));
+    width: 500px;
+    border-radius: 50px;
+}
+
+/* header icono usuario */
+.usuario > img, .buscar > img{
+    height: 30px;
+}
+
+/* header Menu hamburguesa */
+.icono-menu{
+    height: 40px;
+}
+
+/* header Menu Barra de busqueda */
+.buscar > p, .buscar > img,  .usuario > img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buscar > img{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+    height: auto;
+}
+
+/* menu desplegable */
+.nav{
+    z-index: 5;
+    background-color: #6F51AB;
+    height: 697px;
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav > ul > li > a{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    padding: 7px 10px;
+    max-width: 250px;
+    border-bottom:2px solid #000000;
+}
+
+nav > ul > li > a > img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+
+nav > ul > li > p{
+    display: block;
+}
+
+
+body > article.irAPagar{
+    z-index: 5;
+    background-color: #335B92;
+    width: fit-content;
+    border: solid 1px #000000;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible !important;
+}
+
+body > article.irAPagar > div{
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #000000 solid 1px;
+}
+
+body > article.irAPagar > div > button{
+    color: #ffffff;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: #09AC00;
+}
+
+body > article.irAPagar > div > button:hover{
+    background-color: #12D308;
+}
+
+body > article.irAPagar > section{
+    background-color: #4D72A4;
+    border-bottom: solid 1px #000000;
+    position: relative;
+    height: 70px;
+    width: 350px;
+}
+
+body > article.irAPagar > section > img{
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+body > article.irAPagar > section > p.precio{
+    position: absolute;
+    bottom: 7%;
+    right: 10px;
+}
+
+body > article.irAPagar > section > p.nombreJuego{
+    position: absolute;
+    top: 7%;
+    left: 30%;
+}
+
+/* main*/
+/* envarAmigos */
+
+.envar-Amigos{
+    cursor: pointer;
+    background-color: #000000;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.envar-Amigos.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.envar-Amigos img{
+    padding: 3px;
+    height: 50px;
+    width: 50px;
+}
+
+/*juego*/
+.Game{
+    display: flex;
+}
+
+.left{
+    width: 70%;
+}
+
+.juego {
+    margin: 30px 0 30px 30px;
+    height: fit-content;
+}
+
+.juego .title-game{
+    background-color: #7FB3D5; 
+    display: flex;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.juego .title-game img{
+    cursor: pointer;
+    height: 30px;
+    margin: auto;
+    margin-right: 0px;
+}
+
+.chosee-Player{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.img-choose-player img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.btn-choose-player{
+    z-index: 3;
+    position: absolute;
+    height: 60px;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 15px;
+    display: flex;
+    color: #ffffff;
+} 
+
+ .btn-choose{
+    position: relative;
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn-choose button{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform:  uppercase;
+    letter-spacing: 3px;
+    background: transparent;
+}
+
+.btn-choose button::after, .btn-choose button::before{
+    content: '';
+    z-index: -2;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    transform: skewX(30deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-choose button::before{
+    background-color: #ffffff;
+    top: -0.5rem;
+    left: 0rem;
+}
+
+.btn-choose button::after{
+    background-color: #75AADB;
+    top: 0.5rem;
+    right:0rem;
+}
+
+.btn-choose button:hover::before, 
+.btn-choose button:hover::after{
+    top: 0;
+    filter: brightness(1.50);
+    transform: skewX(0deg);
+}
+/*introduccion y como jugar al juego*/
+.right{
+    width: 30%;
+    padding: 30px;
+}
+
+.right p{
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.right img{
+    width: 100%;
+    height: fit-content;
+}
+
+.img-how-to-play{
+    border-radius: 3px;
+}
+
+/*comentarios*/
+
+.comentarios{
+    position: relative;
+    padding: 10px;
+    background-color: #7FB3D5;
+}
+
+.title-comentario{
+    display: flex;
+    align-items: center;
+}
+
+.title-comentario img{
+    height: 45px;
+}
+
+.title-comentario h1{
+    padding-left: 10px;
+}
+
+.comentar{
+    margin: 5px 0;
+    background-color: #6F51AB;
+    padding: 5px;
+}
+
+.comentar img{
+    height: 30px;
+}
+
+.own-comment{
+    position: relative;
+
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #09AC00 ;
+}
+.own-comment button{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    background-color: #09AC00;
+    border-radius: 3px;
+    padding: 2px;
+    color: #ffffff;
+}
+
+.input-comment{
+    width: 100%;
+    margin: 3px;  
+}
+
+.input-comment input{
+    width: 75%;
+}
+
+.populares{
+    width: 100%;
+    border-bottom: solid #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.comentario-1{
+    background-color: #6F51AB;
+    padding: 3px;
+    margin: 7px 0;
+}
+
+.comentario-1 img{
+    height: 30px;
+}
+
+.comentario-1 p{
+    margin: 3px 7px;
+}
+
+.comentario-1 a{
+    margin-left: 75%;
+}
+
+.title-comentario-1{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    display: flex;
+    border-bottom: 2px solid #12D308 ;
+}
+
+
+.btn-like {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    border-radius: 3px;
+    font-size: 25px;
+    border: none;
+    background: #12D308;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.btn-like span {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border-radius: 40%;
+    background:#000000;
+    opacity: 20%;
+    top: -50%;
+    left: -100%;
+    transition: .3s;
+}
+
+.btn-like:hover span {
+    left: -10%;
+}
+
+.btn-like:hover {
+    background: #12D308;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
+}
+/* footer */
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px 0 0 0;
+    padding: 20px;
+}
+
+footer img{
+    height: 30px;
+}
+
+footer > section ul > li{
+    margin: 5px 0 5px 25px;
+    list-style: disc;
+}
