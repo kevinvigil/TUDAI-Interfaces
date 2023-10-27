@@ -41,8 +41,8 @@ class Board{
     
     drawBoard() {
         this.context.drawImage(this.image,0,0,1100,600);
-        this.context.fillStyle="#407F7F";    
-        this.context.fillRect(250,70,600,530);   
+        // this.context.fillStyle="#407F7F";
+        // this.context.fillRect(250,70,600,530);
         for (let row = 0; row < this.slotX.length; row++) {
             for (let col = 0; col < this.slotY.length; col++) {
                let token = this.slot[this.slotY[col]+'-row'][this.slotX[row]+'-col'];
