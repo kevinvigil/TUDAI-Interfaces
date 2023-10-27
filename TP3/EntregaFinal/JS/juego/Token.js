@@ -60,8 +60,8 @@ class Token{
             this.context.lineWidth = 5;
             this.context.stroke();
         }
-       
-        this.context.drawImage(this.image, this.x - this.radio - 6, this.y - this.radio - 6);
+        
+        this.context.drawImage(this.image, this.x - this.radio - 6, this.y - this.radio - 6, 63, 62);
         this.context.closePath();
         this.image.onload = () => {
         };

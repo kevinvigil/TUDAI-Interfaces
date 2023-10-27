@@ -11,7 +11,7 @@ class Board{
         this.finalSlotWinner = {'x':-1, 'y':-1};
         this.winnerPosition = '';
         this.image = new Image();
-        this.image.src = "../IMG/conquienjugar.png";
+        this.image.src = "../IMG/fichas/cancha.png";
         this.initSlot();
     }
 
