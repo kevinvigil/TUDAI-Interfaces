@@ -2,8 +2,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let canvas = document.querySelector('#board');
     let startGame = document.querySelector('#start-game');
-    let winnerInfo = document.querySelector('#winner-info');
-    let drawInfo = document.querySelector('#draw-info');
+    const timer = document.querySelector('#timer');
+    let totalTime;
+    let interval;
+    // let winnerInfo = document.querySelector('#winner-info');
+    // let drawInfo = document.querySelector('#draw-info');
     let game = new Game(canvas, 4);
 
     const playGame = ()  => {
@@ -29,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         })
         
-       
         game = new Game(canvas, size, Messi, Ronaldo);
         game.prepareGame();
-        winnerInfo.classList.add('hide');
-        drawInfo.classList.add('hide');
+        totalTime = 5 * 60;
+        interval = setInterval(countDown, 1000);
     }
+
     const onMouseDown = e => {
         let x = e.layerX - e.currentTarget.offsetLeft;
         let y = e.layerY - e.currentTarget.offsetTop;            
@@ -50,7 +53,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let x = e.layerX - e.currentTarget.offsetLeft;
         let y = e.layerY - e.currentTarget.offsetTop;
         if (game.haveClickedToken()){
-            game.insertToken(x,y);    
+            if (game.insertToken(x,y)) {
+                cutInterval();
+            }
+              
         }
     }
     
@@ -58,6 +64,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     canvas.addEventListener('mousedown', onMouseDown, false);
     canvas.addEventListener('mousemove', onMouseMove, false);
     canvas.addEventListener('mouseup', onMouseUp, false);
+
+    function countDown() {
+        let minutes = Math.floor(totalTime/60);
+        let seconds = totalTime % 60;
+
+        seconds = seconds < 10 ? '0'+seconds :seconds;
+        timer.innerHTML=`${minutes}:${seconds}`;
+        totalTime--;
+        console.log("pase");
+        if (totalTime < 0) {
+            clearInterval(interval);
+            console.log("Tiempo agotado");
+        }
+    }
+
+    function cutInterval(){
+        clearInterval(interval);
+    }
 
 });
 

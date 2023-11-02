@@ -6,7 +6,7 @@ class Board{
         this.slot = [];
         this.slotX = [];
         this.slotY = [];
-        this.topY = 70;
+        this.topY = 150;
         this.initialSlotWinner = {'x':-1, 'y':-1};
         this.finalSlotWinner = {'x':-1, 'y':-1};
         this.winnerPosition = '';
@@ -16,10 +16,10 @@ class Board{
     }
 
     initSlot() {
-        let diferenciaX = (600-(this.size+2)*50)/(this.size+3) + 50;
-        let diferenciaY = (530-(this.size+1)*50)/(this.size+2) + 50;
-        let fxInit = 250+diferenciaX - 25
-        let fy = 70+diferenciaY - 25
+        let diferenciaX = (700-(this.size+2)*50)/(this.size+3) + 50;
+        let diferenciaY = (600-(this.size+1)*50)/(this.size+2) + 50;
+        let fxInit = 350+diferenciaX - 25
+        let fy = 150+diferenciaY - 25
         for (let y = 0; y < this.size+1; y++) {
             let fx = fxInit;
             this.slot[fy+'-row'] = [];
@@ -30,19 +30,19 @@ class Board{
                 if (y === 0)
                     this.slotX.push(fx);
                 fx += diferenciaX;
-                console.log("init")
             }   
             this.slotY.push(fy);
             fy += diferenciaY;           
         }
-        console.log(this.slotX.length)
-        console.log(this.slotY.length)
     }
     
     drawBoard() {
-        this.context.drawImage(this.image,0,0,1100,600);
+        this.context.drawImage(this.image,0,0,1400,800);
         // this.context.fillStyle="#407F7F";
         // this.context.fillRect(250,70,600,530);
+        this.context.beginPath();
+        this.context.rect(350, 150, 700, 600);
+        this.context.stroke();
         for (let row = 0; row < this.slotX.length; row++) {
             for (let col = 0; col < this.slotY.length; col++) {
                let token = this.slot[this.slotY[col]+'-row'][this.slotX[row]+'-col'];
@@ -52,7 +52,7 @@ class Board{
     }
 
     couldInsertToken(x, y, currentToken) {
-        if (y < this.topY && x > 250 && x < 850)
+        if (y < this.topY && x > 350 && x < 1050)
             return this.searchSlot(x, currentToken);
         return false;
     } 
@@ -169,11 +169,63 @@ class Board{
 
     checkRightDiagonal() {
         let isWinner = false;
+        let row = 0;
+        while (row < 2 && !isWinner) {
+            let col = this.size-1;
+            while (col <= this.size+1 && !isWinner) {
+                let tempX = col;
+                let tempY = row;
+                let value = this.slot[this.slotY[tempY]+'-row'][this.slotX[tempX]+'-col'].getPlayer();
+                if (value !== 0) {
+                    let i = 0;
+                    let t = true;
+                    while (i < this.size-1 && t) {
+                        tempX--;
+                        tempY++;
+                        let tempValue = this.slot[this.slotY[tempY]+'-row'][this.slotX[tempX]+'-col'].getPlayer();
+                        if (tempValue !== value) {
+                            t = false;
+                        } else if (i === this.size-2){
+                            isWinner = true;
+                        }
+                        i++;
+                    }
+                }
+                col++;
+            }
+            row++;
+        }
         return isWinner;
     }
 
     checkLeftDiagonal() {
         let isWinner = false;
+        let row = 0;
+        while (row < 2 && !isWinner) {
+            let col = 0;
+            while (col < 3 && !isWinner) {
+                let tempX = col;
+                let tempY = row;
+                let value = this.slot[this.slotY[tempY]+'-row'][this.slotX[tempX]+'-col'].getPlayer();
+                if (value !== 0) {
+                    let i = 0;
+                    let t = true;
+                    while (i < this.size-1 && t) {
+                        tempX++;
+                        tempY++;
+                        let tempValue = this.slot[this.slotY[tempY]+'-row'][this.slotX[tempX]+'-col'].getPlayer();
+                        if (tempValue !== value) {
+                            t = false;
+                        } else if (i === this.size-2){
+                            isWinner = true;
+                        }
+                        i++;
+                    }
+                }
+                col++;
+            }
+            row++;
+        }
         return isWinner;
     }
 }

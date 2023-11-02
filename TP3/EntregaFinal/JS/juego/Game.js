@@ -6,8 +6,8 @@ class Game{
         this.canvas = canvas;
         this.context = canvas.getContext('2d', this.size);
         this.board = new Board(this.context, this.size);
-        this.player1 = new Player(this.context, 'Jugador 1', 1);
-        this.player2 = new Player (this.context, 'Jugador 2', 2);
+        this.player1 = new Player(this.context, 'MESSI', 1);
+        this.player2 = new Player (this.context, 'RONALDO', 2);
         this.tokens = [];
         this.turn = 1;
         this.currentToken = null;
@@ -21,17 +21,17 @@ class Game{
     }
 
     drawInitialTokens(){
-        let InitialPosXJ1 = 10
-        let InitialPosXJ2 = 860
+        let InitialPosXJ1 = 40
+        let InitialPosXJ2 = 1050
         this.drawPlayerToken(InitialPosXJ1, 'p', this.player1, this.imgj1);
         this.drawPlayerToken(InitialPosXJ2, 'p', this.player2, this.imgj2);
     }
 
     drawPlayerToken(x, param, jugador, img) {
-        let diferenciaX = 56;
-        let diferenciaY = (600/12);
+        let diferenciaX = 70;
+        let diferenciaY = (750/12);
         let fxInit = x+diferenciaX-25;
-        let fy = 600-25;
+        let fy = 750-25;
         let contador = 0;
         let fila = 0;
         let column;
@@ -113,16 +113,15 @@ class Game{
     }
 
     insertToken(x, y){
-
         if(this.board.couldInsertToken(x, y, this.currentToken)){
             this.totalTokens--;
             if (this.isWinner()) {
-                let winnerMessage = document.getElementById('winner-info');
-                if(this.turn === 1)
-                    winnerMessage.innerHTML = 'Winner PLAYER 1';
-                else
-                    winnerMessage.innerHTML = 'Winner PLAYER 2';
-                winnerMessage.classList.remove('hide');
+                // let winnerMessage = document.getElementById('winner-info');
+                // if(this.turn === 1)
+                //     winnerMessage.innerHTML = 'Winner PLAYER 1';
+                // else
+                //     winnerMessage.innerHTML = 'Winner PLAYER 2';
+                // winnerMessage.classList.remove('hide');
                 this.finishedGame = true;
             }
             else if(this.totalTokens === 0){
@@ -140,13 +139,17 @@ class Game{
         }
         this.resetclickedToken();
         this.prepareGame();
+        return this.isWinner();
     }
 
     isWinner(){
         let isWinner = false;
-        if(this.board.checkVertical() || this.board.checkHorizontal() /*||
-        this.board.checkHorizontal() || this.board.checkDiagonal()*/) 
+        if(this.board.checkVertical() || this.board.checkHorizontal() || this.board.checkDiagonal()) 
             isWinner = true;
         return isWinner;
     }
+
+    
+
 }
+
