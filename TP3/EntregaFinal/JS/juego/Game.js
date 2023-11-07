@@ -1,21 +1,21 @@
 class Game{
     constructor(canvas, size, imgj1, imgj2){
+        this.canvas = canvas;
         this.size = size;
         this.imgj1 = imgj1;
         this.imgj2 = imgj2;
-        this.canvas = canvas;
-        this.context = canvas.getContext('2d', this.size);
+        this.context = canvas.getContext('2d');
         this.board = new Board(this.context, this.size);
         this.player1 = new Player(this.context, 'MESSI', 1);
         this.player2 = new Player (this.context, 'RONALDO', 2);
         this.tokens = [];
-        this.turn = 1;
+        this.turn = Math.floor(Math.random() * 2) + 1;;
         this.currentToken = null;
         this.initialPositionX;
         this.initialPositionY;
         this.clickedToken = false;
         this.finishedGame = false;
-        this.totalTokens = 42;
+        this.totalTokens = (this.size+2)*(this.size+1);
         this.drawInitialTokens();
         this.startGame();
     }
@@ -58,7 +58,6 @@ class Game{
     prepareGame(){        
         this.board.drawBoard();       
         this.setTokens();
-        // this.checkCurrentTurn();
     }
 
     setTokens() {
@@ -66,21 +65,6 @@ class Game{
             this.tokens[i].draw();
         }
     }
-
-    // checkCurrentTurn() {
-    //     if (this.turn === 1){
-    //         document.querySelector('#J1').classList.add('current-shift');
-    //         document.querySelector('#J2').classList.remove('current-shift');
-    //     }
-    //     else if(this.turn === 2) {
-    //         document.querySelector('#J2').classList.add('current-shift');
-    //         document.querySelector('#J1').classList.remove('current-shift');
-    //     }
-    //     else{
-    //         document.querySelector('#J1').classList.remove('current-shift');
-    //         document.querySelector('#J2').classList.remove('current-shift');
-    //     }
-    // }
 
     isClickedToken(x, y) {       
         for (let i=0; i<this.tokens.length; i++) {
@@ -115,19 +99,22 @@ class Game{
     insertToken(x, y){
         if(this.board.couldInsertToken(x, y, this.currentToken)){
             this.totalTokens--;
+            let winnerMessage = document.querySelector('#ganador');
             if (this.isWinner()) {
-                // let winnerMessage = document.getElementById('winner-info');
-                // if(this.turn === 1)
-                //     winnerMessage.innerHTML = 'Winner PLAYER 1';
-                // else
-                //     winnerMessage.innerHTML = 'Winner PLAYER 2';
-                // winnerMessage.classList.remove('hide');
+                if(this.turn === 1){
+                    winnerMessage.classList.remove("noVisible");
+                    winnerMessage.innerHTML = "<h1> The Winner is MESSI </h1>";
+                } else {
+                    winnerMessage.classList.remove("noVisible");
+                    winnerMessage.innerHTML = "<h1> The Winner is RONALDO </h1>";
+                }
                 this.finishedGame = true;
             }
             else if(this.totalTokens === 0){
                 this.finishedGame = true;
-                let alert = document.getElementById('draw-info');
-                alert.classList.remove('hide');
+                winnerMessage.classList.remove("noVisible");
+                winnerMessage.innerHTML = "<h1> It is a TIE </h1>";
+                return true;
             }
             else
                 this.turn = (this.turn === 1) ? 2:1;

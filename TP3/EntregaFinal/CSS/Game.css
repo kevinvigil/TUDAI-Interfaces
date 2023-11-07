@@ -127,6 +127,11 @@ body > article.irAPagar{
     visibility: visible !important;
 }
 
+.noVisible{
+    visibility: hidden !important;
+    z-index: -1 !important;
+}
+
 body > article.irAPagar > div{
     padding: 5px 0;
     display: flex;
@@ -205,30 +210,29 @@ body > article.irAPagar > section > p.nombreJuego{
 /*juego*/
 
 main{
-    margin: 30px 0 30px 30px;
-    height: fit-content;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.title-game h2, .title-game p{
+main section.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-game h2{
     color: #000000;
 }
 
 .title-game{
-    color: #000000;
+    display: flex;
     background-color: #7FB3D5; 
-    position: relative;
-    display: block;
-    width: 1290px;
+    width: 1390px;
     padding: 5px;
     border-radius: 5px 5px 0 0;
-}
-
-.title-game .name{
-    display: flex;
-    width: 100%;
-    border-bottom: #000000 solid 2px;
-    margin-bottom: 5px;
 }
 
 .title-game img{
@@ -238,21 +242,121 @@ main{
     margin-right: 0px;
 }
 
-.form-game{
+.form-game > img{
+    z-index: 5;
+    position: absolute;
+    width: 1400px;
+    height: 800px;
+}
+
+form h1, form h2, form p{
+    color: #000000;
+}
+
+.form-game > form{
+    z-index: 7;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    border-bottom: #000000 solid 2px;
-    margin-bottom: 5px;
+}
+
+.form-game > form > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+
+}
+
+.form-game{
+    position: absolute;
+    display: flex;
+    width: 1400px;
+    height: 800px;
+    visibility: visible;
+}
+
+form .selectJugador label{
+    width: 160px;
+    height: 160px;
+}
+
+form .selectJugador label .checkmark{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
 }
 
 .form-game label img{
-    width: 60px;
-    height: 60px;
+    z-index: 2;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+}
+
+form .select label{
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+form .selectLine label{
+    height: 25px;
+    width: 20px;
+}
+
+form .selectLine label h2{
+    z-index: 2;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+form .select label input{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+}
+
+form .selectLine label .checkmark{
+    border-radius: 3px;
+    height: 25px;
+    width: 20px;
+}
+
+form .select label input:checked ~ .checkmark {
+    background-color: #2196F3;
 }
 
 .form-game .selectLine div{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -260,15 +364,29 @@ main{
     display: flex;
 }
 
-.partOfTheGame{
+.ganador h1{
+    color: #ffffff;
+}
+
+.ganador{
+    position: absolute;
+    background-color: #2C1069;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    top: 10px;
 }
 
 .chosee-Player{
     position: relative;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    width: 1400px;
     height: auto;
     margin-bottom: 40px;
 }
@@ -280,28 +398,22 @@ main{
 }
 
 .btn-choose-player{
-    z-index: 3;
+    z-index: 8;
     position: absolute;
-    height: 60px;
+    bottom: 12px;
     width: 80%;
     left: 10%;
     right: 10%;
-    bottom: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #000000;
-    border-radius: 15px;
-    display: flex;
     color: #ffffff;
 } 
 
- .btn-choose{
+.btn-choose{
     position: relative;
     width: 150px;
     height: 30px;
-    display: inline-block;
-    border-radius: 5px;
 }
 
 .btn-choose button{
@@ -312,6 +424,9 @@ main{
     text-transform:  uppercase;
     letter-spacing: 3px;
     background: transparent;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 .btn-choose button::after, .btn-choose button::before{
@@ -342,32 +457,31 @@ main{
     filter: brightness(1.50);
     transform: skewX(0deg);
 }
+
 /*introduccion y como jugar al juego*/
-.right{
-    width: 30%;
-    padding: 30px;
+
+main section.intro article, main section.comentarios{
+    width: 1380px;
 }
 
-.right p{
-    margin-left: 5px;
-    margin-bottom: 3px;
+main section.intro article.photo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.right img{
-    width: 100%;
-    height: fit-content;
-}
-
-.img-how-to-play{
-    border-radius: 3px;
+main section.intro article img{
+    width: 240px;
+    height: auto;
 }
 
 /*comentarios*/
 
-.comentarios{
-    position: relative;
+main section.comentarios, main section.intro{
     padding: 10px;
     background-color: #7FB3D5;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .title-comentario{
@@ -395,13 +509,13 @@ main{
 
 .own-comment{
     position: relative;
-
     width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid #09AC00 ;
 }
+
 .own-comment button{
     position: absolute;
     right: 0;

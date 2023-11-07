@@ -76,188 +76,124 @@
         <img src="..\IMG\redes\telegram.png" alt="telegram">
         <img src="..\IMG\redes\twiter.png" alt="twiter">
     </article>
-    <!-- <div class="row header">
-        <div id="J1" class="players offset-md-1 col-md-2 header-actions alert alert-info">
-            <h2 id="nameP1">Player 1</h2>
-        </div>
-        <div class="header-actions col-md-4 offset-md-1">
-            <div class="row">
-                <div class="col-md-12 header-page">
-                    <h1>Four in a row</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 header-page">
-                    <button id="start-game" class="btn btn-success">Start / Restart Game</button>
-                </div>
-            </div>
-        </div>
-        <div id="J2" class="players offset-md-1 col-md-2 header-actions alert alert-info">
-            <h2 id="nameP1">Player 2</h2>
-        </div>
-    </div>
-
-    <div class="row info">
-        <div id="winner-info" class="alert winner-message alert-success hide offset-md-1 col-md-10">
-        </div>
-        <div id="draw-info" class=" alert winner-message alert-danger hide offset-md-1 col-md-10">
-            There is a tie
-        </div>
-    </div> -->
     <main>
-        <section>
+        <section class="game">
             <div class="title-game">
-                <div class="name">
-                    <h1>Mundial Cuatro en linea</h1>
-                    <img id="compartirr" class="compartir" src="../IMG/iconos-juego/compartir.png" alt="compartir">
+                <h1>Mundial Cuatro en linea</h1>
+                <img id="compartirr" class="compartir" src="../IMG/iconos-juego/compartir.png" alt="compartir">
+            </div>
+            <div class="chosee-Player">
+                <div class="row">
+                    <canvas id="board" class="bloqueado" width="1400" height="800"></canvas>
                 </div>
-                <div>
-                    <form action="submit"  class="form-game">
-                        <div class="selectJugador">
-                            <h2>Fichas Messi</h2>
+                <div class="form-game" id="formGame">
+                    <img src="..\IMG\fichas\cancha.png" alt="">
+                    <form action="submit"  >
+                        <div class="selectJugador select">
+                            <h1>Fichas Messi</h1>
                             <label> 
                                 <img src="..\IMG\fichas\ficha_messi_1.png" alt="ficha4"> 
-                                <input type="radio" name="Messi" value="..\IMG\fichas\ficha_messi_1.png" >
+                                <input type="radio" name="Messi" value="..\IMG\fichas\ficha_messi_1.png" checked>
+                                <span class="checkmark"></span>
                             </label>
                             
                             <label> 
                                 <img src="..\IMG\fichas\ficha_messi_2.png" alt="ficha1"> 
-                                <input type="radio" name="Messi" value="..\IMG\fichas\ficha_messi_2.png" checked>
+                                <input type="radio" name="Messi" value="..\IMG\fichas\ficha_messi_2.png">
+                                <span class="checkmark"></span>
                             </label>
 
                             <label> 
                                 <img src="..\IMG\fichas\ficha_messi_3.png" alt="ficha1"> 
-                                <input type="radio" name="Messi" value="..\IMG\fichas\ficha_messi_3.png" checked>
+                                <input type="radio" name="Messi" value="..\IMG\fichas\ficha_messi_3.png">
+                                <span class="checkmark"></span>
                             </label>
-    
+
                         </div>
-                        <div class="selectJugador">
-                            <h2>Fichas Ronaldo</h2>
+                        <div class="selectLine select">
+                            <h1>Cuantos para ganar</h1>
+                            <div>
+                                <label>  
+                                    <h2> 4 </h2>
+                                    <input type="radio" name="Cantidad" value=4 checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label>  
+                                    <h2> 5 </h2>
+                                    <input type="radio" name="Cantidad" value=5>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label>  
+                                    <h2> 6 </h2>
+                                    <input type="radio" name="Cantidad" value=6>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label>  
+                                    <h2> 7 </h2>
+                                    <input type="radio" name="Cantidad" value=7>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label>  
+                                    <h2> 8 </h2>
+                                    <input type="radio" name="Cantidad" value=8>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="selectJugador select">
+                            <h1>Fichas Ronaldo</h1>
                             <label> 
                                 <img src="..\IMG\fichas\ficha_ronaldo_1.png" alt="ficha1"> 
                                 <input type="radio" name="Ronaldo" value="..\IMG\fichas\ficha_ronaldo_1.png" checked>
+                                <span class="checkmark"></span>
                             </label>
-    
+
                             <label> 
                                 <img src="..\IMG\fichas\ficha_ronaldo_2.png" alt="ficha2">
                                 <input type="radio" name="Ronaldo" value="..\IMG\fichas\ficha_ronaldo_2.png">
+                                <span class="checkmark"></span>
                             </label>
 
                             <label> 
                                 <img src="..\IMG\fichas\ficha_ronaldo_3.png" alt="ficha2">
                                 <input type="radio" name="Ronaldo" value="..\IMG\fichas\ficha_ronaldo_3.png">
+                                <span class="checkmark"></span>
                             </label>
-    
-                        </div>
-                        <div class="selectLine">
-                            <h2>Cuantos para ganar</h2>
-                            <div>
-                                <label>  
-                                    <p> 4 </p>
-                                    <input type="radio" name="Cantidad" value=4 checked>
-                                </label>
-                                <label>  
-                                    <p> 5 </p>
-                                    <input type="radio" name="Cantidad" value=5 >
-                                </label>
-                                <label>  
-                                    <p> 6 </p>
-                                    <input type="radio" name="Cantidad" value=6 >
-                                </label>
-                                <label>  
-                                    <p> 7 </p>
-                                    <input type="radio" name="Cantidad" value=7 >
-                                </label>
-                                <label>  
-                                    <p> 8 </p>
-                                    <input type="radio" name="Cantidad" value=8 >
-                                </label>
-                            </div>
+
                         </div>
                     </form>
-                    <div class="partOfTheGame">
-                        <button id="start-game" class="btn btn-success">Start / Restart Game</button>
-                        <h2 id="timer">5:00</h2>
+                    <div class="btn-choose-player">
+                        <div class="btn-choose Messi">
+                            <button id="start-game" class="form-game">Start</button>
+                        </div>
                     </div>
-                    
                 </div>
+                <div id="Restart-game" class="btn-choose-player noVisible">
+                    <div class="btn-choose Messi">
+                        <button class="form-game">Restart</button>
+                    </div>
+                </div>
+                <div id="ganador" class="ganador noVisible"></div>
+                <h2 class="ganador" id="timer">5:00</h2>
                 
             </div>
-            <div class="chosee-Player">
-                <div class="row">
-                    <div class="col-md-8 offset-md-1">
-                        <canvas id="board" class="bloqueado" width="1400" height="800"></canvas>
-                    </div>
-                </div>
-                <div class="btn-choose-player">
-                    <div class="btn-choose Ronaldo">
-                        <button>RONALDO</button>
-                    </div>
-                    <div class="btn-choose Messi">
-                        <button >MESSI</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comentarios">
-                <div class="title-comentario">
-                    <img src="../IMG/iconos-juego/comentario.png" alt="img-comentario">
-                    <h1>Comentarios</h1>
-                </div>
-                <div class="comentar">
-                    <div class="own-comment">
-                        <img src="../IMG/icono-usuario1.png" alt="user">
-                        <h2>Tu</h2>
-                        <a href="">
-                            <button class="publicar">Publicar</button>
-                        </a>
-                        
-                    </div>
-                    <div class="input-comment">
-                        <h5>¿Que piensas del juego?</h5>
-                        <input type="text">
-                    </div>
-                </div>
-                <h1 class="populares">Populares</h1>
-    
-                <div class="comentario-1">
-                    <div class="title-comentario-1">
-                        <img src="../IMG/icono-usuario1.png" alt="user">
-                        <h2>harry_po</h2>
-                        <a href="" class="btn-like">
-                            <span></span><span></span><span></span><span></span>
-                            <img src="../IMG/iconos-juego/like.png" alt="">
-                        </a>                
-                    </div>
-                    <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
-                </div>
-                <div class="comentario-1">
-                    <div class="title-comentario-1">
-                        <img src="../IMG/icono-usuario1.png" alt="user">
-                        <h2>harry_po</h2>
-                        <a href="" class="btn-like">
-                            <span></span><span></span><span></span><span></span>
-                            <img src="../IMG/iconos-juego/like.png" alt="">
-                        </a>                
-                    </div>
-                    <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
-                </div>
-            </div>
         </section>
-        <div class="right">
-            <section>
-                <div class="introduccion">
-                    <h2>Introduccion</h2>
-                    <p>El Duelo Mundial de Cuatro en Línea</p>
-                    <p>Era una tarde soleada en el estadio mundialista donde se jugaría la final del torneo de Cuatro en Línea. En un rincón del campo estaba Cristiano Ronaldo, representando a su país con el orgullo que siempre lo caracterizaba. Del otro lado, Lionel Messi, con su habilidad y agilidad legendaria, estaba listo para defender los colores de su nación.
-                    </p>
-                    <p>                            El tablero gigante se alzaba frente a ellos, listo para recibir las fichas rojas y amarillas que representaban a los dos jugadores. La multitud rugía de emoción mientras los dos astros del fútbol se miraban con determinación.
-                    </p>
-                    <!--aca va la imagen pero no se como desgargarla de figma-->
-                    <img src="../IMG/messiRonaldo.jpeg" alt="img-Mesii-Ronaldo-hug">
-                </div>
-            </section>
-            <section>
+
+        <section class="intro">
+            <article>
+                <h2>Introduccion</h2>
+                <p>El Duelo Mundial de Cuatro en Línea</p>
+                <p>Era una tarde soleada en el estadio mundialista donde se jugaría la final del torneo de Cuatro en Línea. En un rincón del campo estaba Cristiano Ronaldo, representando a su país con el orgullo que siempre lo caracterizaba. Del otro lado, Lionel Messi, con su habilidad y agilidad legendaria, estaba listo para defender los colores de su nación.</p>
+                <p>El tablero gigante se alzaba frente a ellos, listo para recibir las fichas rojas y amarillas que representaban a los dos jugadores. La multitud rugía de emoción mientras los dos astros del fútbol se miraban con determinación.</p>
+            </article>
+            <article class="photo">
+                <img src="..\IMG\juego\photo1.png" alt="">
+                <img src="..\IMG\juego\photo2.png" alt="">
+                <img src="../IMG/messiRonaldo.jpeg" alt="img-Mesii-Ronaldo-hug">
+                <img src="..\IMG\juego\photo3.png" alt="">
+                <img src="..\IMG\juego\photo4.png" alt="">
+            </article>
+            <article>
                 <div class="how-to-play">
                     <h2>¿Como Jugar?</h2>
                     <p>Como Jugar:
@@ -269,10 +205,54 @@
                     <!--aca va la imgen de como se juega con el mouse, pero no se como se descarga de figma-->
                     <!-- <img src="../IMG/comojugar.jpeg" alt="img-how-to-play">
                     <iframe class="video" width="356" height="200" src="https://www.youtube.com/embed/JBSbiilzg9U?si=fQE5u1s2XiPsAc5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
+
+        <section class="comentarios">
+            <div class="title-comentario">
+                <img src="../IMG/iconos-juego/comentario.png" alt="img-comentario">
+                <h1>Comentarios</h1>
+            </div>
+            <div class="comentar">
+                <div class="own-comment">
+                    <img src="../IMG/icono-usuario1.png" alt="user">
+                    <h2>Tu</h2>
+                    <a href="">
+                        <button class="publicar">Publicar</button>
+                    </a>
+                    
+                </div>
+                <div class="input-comment">
+                    <h5>¿Que piensas del juego?</h5>
+                    <input type="text">
+                </div>
+            </div>
+            <h1 class="populares">Populares</h1>
+            <article class="comentario-1">
+                <div class="title-comentario-1">
+                    <img src="../IMG/icono-usuario1.png" alt="user">
+                    <h2>harry_po</h2>
+                    <a href="" class="btn-like">
+                        <span></span><span></span><span></span><span></span>
+                        <img src="../IMG/iconos-juego/like.png" alt="">
+                    </a>                
+                </div>
+                <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
+            </article>
+            <article class="comentario-1">
+                <div class="title-comentario-1">
+                    <img src="../IMG/icono-usuario1.png" alt="user">
+                    <h2>harry_po</h2>
+                    <a href="" class="btn-like">
+                        <span></span><span></span><span></span><span></span>
+                        <img src="../IMG/iconos-juego/like.png" alt="">
+                    </a>                
+                </div>
+                <p>el juego está bueno, aunque al jugar por primera vez se me reinició, no se si soy el único e incluso me ha pasado con otros</p>
+            </article>
+        </section>
+        
     </main>
     <footer>
         <section>

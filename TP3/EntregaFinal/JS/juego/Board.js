@@ -38,8 +38,6 @@ class Board{
     
     drawBoard() {
         this.context.drawImage(this.image,0,0,1400,800);
-        // this.context.fillStyle="#407F7F";
-        // this.context.fillRect(250,70,600,530);
         this.context.beginPath();
         this.context.rect(350, 150, 700, 600);
         this.context.stroke();
