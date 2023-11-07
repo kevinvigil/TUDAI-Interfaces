@@ -7,31 +7,42 @@
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
     background-color: #2C1069;
 }
+
 h1{
     color: #000000;
 }
-h2, p{
-    color: #ffffff;
-}
+
 h1{
     font-size: 32px;
     font-weight: bolder;
 }
+
 h2{
     font-size: 20px;
     font-weight: bold;
 }
+
 p{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: normal;
 }
 
+h1 ~ p, h2 ~ p, h1 ~ h2{
+    padding-top: 4px;
+    padding-left: 3px;
+}
+
+p ~ p{
+    padding-top: 2px;
+}
 
 body > article.breadcrumbs{
     padding: 5px;
+    color: #ffffff;
 }
 
 /* header */
@@ -78,7 +89,7 @@ header > div > img {
 
 /* menu desplegable */
 .nav{
-    z-index: 5;
+    z-index: 9;
     background-color: #6F51AB;
     height: 697px;
     display: flex;
@@ -114,7 +125,7 @@ nav > ul > li > p{
 
 
 body > article.irAPagar{
-    z-index: 5;
+    z-index: 8;
     background-color: #335B92;
     width: fit-content;
     border: solid 1px #000000;
@@ -460,14 +471,22 @@ form .select label input:checked ~ .checkmark {
 
 /*introduccion y como jugar al juego*/
 
-main section.intro article, main section.comentarios{
-    width: 1380px;
+
+
+main section.intro{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
 }
 
-main section.intro article.photo{
+main section.intro > article > div{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin-bottom: 5px;
+}
+
+main section.intro > article{
+    width: -webkit-fill-available;   
 }
 
 main section.intro article img{
@@ -475,7 +494,15 @@ main section.intro article img{
     height: auto;
 }
 
+main section.intro div article .how-to-play{
+    height: 180px;
+    width: auto;
+}
+
 /*comentarios*/
+main section.comentarios, main section.intro{
+    width: 1380px;
+}
 
 main section.comentarios, main section.intro{
     padding: 10px;
