@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     let game = new Game(canvas, 4);
 
+    /**
+     * Se ejecuta al iniciar el juego, 
+     * setea las fichas de cada uno y da inicio al timer
+     */
     const playGame = ()  => {
         cutInterval(interval);
         let Messi = document.getElementsByName('Messi');
@@ -53,17 +57,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
         restart.classList.add("noVisible");
         form.classList.remove("noVisible")
     }
+
     const onMouseDown = e => {
         let x = e.layerX - e.currentTarget.offsetLeft;
         let y = e.layerY - e.currentTarget.offsetTop;            
         game.isClickedToken(x, y);
     }
+    
     const onMouseMove = e => {
         let x = e.layerX - e.currentTarget.offsetLeft;
         let y = e.layerY - e.currentTarget.offsetTop;   
         if (game.haveClickedToken() && totalTime > 0)
             game.moveToken(x, y);
     }
+
     const onMouseUp = e => {
         let x = e.layerX - e.currentTarget.offsetLeft;
         let y = e.layerY - e.currentTarget.offsetTop;
@@ -72,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 timer.classList.add("noVisible")
                 cutInterval();
             }
-              
         }
     }
     

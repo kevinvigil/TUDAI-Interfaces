@@ -7,14 +7,14 @@ class Board{
         this.slotX = [];
         this.slotY = [];
         this.topY = 150;
-        this.initialSlotWinner = {'x':-1, 'y':-1};
-        this.finalSlotWinner = {'x':-1, 'y':-1};
-        this.winnerPosition = '';
         this.image = new Image();
         this.image.src = "../IMG/fichas/cancha.png";
         this.initSlot();
     }
 
+    /**
+     * Inicializa las posiciones de los tokens dentro del tablero de juego
+     */
     initSlot() {
         let diferenciaX = (700-(this.size+2)*50)/(this.size+3) + 50;
         let diferenciaY = (600-(this.size+1)*50)/(this.size+2) + 50;
@@ -36,6 +36,10 @@ class Board{
         }
     }
     
+    /**
+     * Dibuja la imajen de fondo, un marco y dibuja
+     * los tokens del tablero 
+     */
     drawBoard() {
         this.context.drawImage(this.image,0,0,1400,800);
         this.context.beginPath();
@@ -49,12 +53,19 @@ class Board{
         }
     }
 
+    /**
+     * Chequea que el espacio en el que se suelta el token sea apropiado
+     */
     couldInsertToken(x, y, currentToken) {
         if (y < this.topY && x > 350 && x < 1050)
             return this.searchSlot(x, currentToken);
         return false;
     } 
 
+    /**
+     * Al slotar el token compara con que columna coincide 
+     * y despues chequea en que fila
+     */
     searchSlot(x, currentToken) {
         for(let i = 0; i < this.slotX.length; i++) {
             if (this.slotX[i] > x - 25 && this.slotX[i] < x + 25){
@@ -64,6 +75,11 @@ class Board{
         return false;
     }
 
+    /**
+     * Recive una posicion en x, con la misma y con el slotY recorre el slot hacia abajo chequeando 
+     * si la matris en ese espacio posee una ficha correspondiente a un jugador. 
+     * Al terminar si existe un lugar inserta el token en el lugar
+     */
     insertToken(x, currentToken) {
         let posTmpY = -1;
         let couldInsert = false;        
@@ -84,6 +100,10 @@ class Board{
         return couldInsert;  
     }
 
+    /**
+     * Recorre todas las columnas chequeando si existen {size}
+     * fichas de un jugador seguidas
+     */
     checkVertical() {
         let count = 0;
         let player = -1;
@@ -101,26 +121,23 @@ class Board{
                 else if (valor !== player){
                     player = valor;
                     count = 1;
-                    this.initialSlotWinner.x = col;
-                    this.initialSlotWinner.y = row;
                 }
                 else
                     count++;
                 
                 if (count === this.size){                    
-                    isWinner = true; 
-                    this.winnerPosition = 'vertical';
-                    this.finalSlotWinner.x = col;
-                    this.finalSlotWinner.y = row;                  
+                    isWinner = true;             
                     return isWinner;
                 }                
             }
         }
-        this.finalSlotWinner.x = -1;
-        this.finalSlotWinner.y = -1;
         return isWinner;
     }
 
+    /**
+     * Recorre todas las filas chequeando si existen {size}
+     * fichas de un jugador seguidas
+     */
     checkHorizontal() {
         let count = 0;
         let player = -1;
@@ -138,23 +155,16 @@ class Board{
                 else if (valor !== player){
                     player = valor;
                     count = 1;
-                    this.initialSlotWinner.x = col;
-                    this.initialSlotWinner.y = row;
                 }
                 else
                     count++;
                 
                 if (count === this.size){
                     isWinner = true;
-                    this.winnerPosition = 'horizontal';
-                    this.finalSlotWinner.x = col;
-                    this.finalSlotWinner.y = row;
                     return isWinner;
                 }
             }
         }
-        this.finalSlotWinner.x = -1;
-        this.finalSlotWinner.y = -1;
         return isWinner;
     }
 
@@ -165,6 +175,10 @@ class Board{
         return isWinner;
     }
 
+    /**
+     * Recorre las primeras tres filas {0, 1, 2} y a partir de estas
+     * recorre las tres ultimas columnas
+     */
     checkRightDiagonal() {
         let isWinner = false;
         let row = 0;
@@ -196,6 +210,10 @@ class Board{
         return isWinner;
     }
 
+    /**
+     * Recorre las primeras tres filas {0, 1, 2} y a partir de estas
+     * recorre las tres primeras columnas
+     */
     checkLeftDiagonal() {
         let isWinner = false;
         let row = 0;

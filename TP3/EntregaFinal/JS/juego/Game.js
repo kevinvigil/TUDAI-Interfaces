@@ -20,6 +20,9 @@ class Game{
         this.startGame();
     }
 
+    /**
+     * llama al metodo encargado de generar los tokens para cada jugador
+     */
     drawInitialTokens(){
         let InitialPosXJ1 = 40
         let InitialPosXJ2 = 1050

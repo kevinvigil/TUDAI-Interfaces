@@ -26,6 +26,10 @@ class Token{
         return this.status;
     }
 
+    setStatus(status) {
+        this.status = status;
+    }
+    
     setContext(context){
         this.context = context;
     }
@@ -40,9 +44,7 @@ class Token{
         this.y = y;
     }
 
-    setStatus(status) {
-        this.status = status;
-    }
+    
 
     isClicked(x, y) {
         var xLayer = x - this.x;
