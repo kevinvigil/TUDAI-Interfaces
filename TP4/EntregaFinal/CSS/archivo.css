@@ -1,0 +1,104 @@
+/* Group 2 */
+.header{
+    display:flex;
+    position: relative;
+    width: 1080px;
+    height: 103px;
+}
+
+/* Rectangle 1 */
+.rectangle_1{
+    position: relative;
+    width: 1080px;
+    height: 103px;
+    background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
+}
+
+/* Rectangle 2 */
+.rectangle_2{
+    position: relative;
+    margin: 20px 0px 0px 980px;
+    width: 200px;
+    height: 50px;
+    background: #FFE901;
+    /* #2982FF */
+    border: 8px solid #2982FF;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px #02187E;
+    border-radius: 111px;
+    
+}
+
+/* COMPRAR */
+.rectangle_2 .comprar{
+    
+    position: relative;
+    width: 114px;
+    height: 19px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 94.5%;
+    line-height: 19px;
+    text-align: left;
+    /* identical to box height, or 19px */
+    letter-spacing: 0.11em;
+    color: #02187E;
+    border: 1px solid #02187E;
+    font-family: Lato;
+
+
+
+
+    }
+
+/* Group 1 */
+.group_1{
+    margin : 20px 0px 0px 100px;
+    position: relative;
+    width: 34px;
+    height: 26px;
+    /* Drop Shadow */
+    filter: drop-shadow(4px 5px 0px #02187E);
+}
+
+/* Rectangle 3 */
+.rectangle_3{
+    position: relative;
+    width: 34px;
+    height: 4px;
+    background: #FFE901;
+    border: 4px solid #2981FF;
+    border-radius: 111px;
+}
+/* Rectangle 4 */
+.rectangle_4{
+    position: relative;
+    width: 34px;
+    height: 4px;
+    background: #FFE901;
+    border: 4px solid #2981FF;
+    border-radius: 111px;
+    
+}
+
+/* Rectangle 5 */
+.rectangle_5{
+    position: relative;
+    width: 34px;
+    height: 4px;
+    background: #FFE901;
+    border: 4px solid #2981FF;
+    border-radius: 111px;
+}
+
+/* image 5 1 */
+.img_header_5_1{
+    margin: 91px 0px 0px 330px;
+    position: relative;
+    width: 590px;
+    height: 301px;
+    
+}
+
