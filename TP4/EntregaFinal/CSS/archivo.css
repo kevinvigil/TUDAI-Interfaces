@@ -14,44 +14,7 @@
     background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
 }
 
-/* Rectangle 2 */
-.rectangle_2{
-    position: relative;
-    margin: 20px 0px 0px 980px;
-    width: 200px;
-    height: 50px;
-    background: #FFE901;
-    /* #2982FF */
-    border: 8px solid #2982FF;
-    /* Drop Shadow */
-    box-shadow: 4px 5px 0px #02187E;
-    border-radius: 111px;
-    
-}
 
-/* COMPRAR */
-.rectangle_2 .comprar{
-    
-    position: relative;
-    width: 114px;
-    height: 19px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 94.5%;
-    line-height: 19px;
-    text-align: left;
-    /* identical to box height, or 19px */
-    letter-spacing: 0.11em;
-    color: #02187E;
-    border: 1px solid #02187E;
-    font-family: Lato;
-
-
-
-
-    }
 
 /* Group 1 */
 .group_1{
@@ -101,4 +64,299 @@
     height: 301px;
     
 }
+/* Rectangle 2 */
+.rectangle_2{
+    position: relative;
+    margin: 20px 0px 0px 980px;
+    width: 200px;
+    height: 50px;
+    background: #FFE901;
+    /* #2982FF */
+    border: 8px solid #2982FF;
+    /* Drop Shadow */
+    box-shadow: 4px 5px 0px #02187E;
+    border-radius: 111px;
+}
 
+/* COMPRAR */
+.comprar{
+    margin: 36px 0px 0px 1023px;
+    position: relative;
+    width: 114px;
+    height: 19px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 94.5%;
+    line-height: 19px;
+    text-align: left;
+    /* identical to box height, or 19px */
+    letter-spacing: 0.11em;
+    color: #02187E;
+    border: 1px solid #02187E;
+    font-family: Lato;
+    }
+
+/* Untitled-1 1 */
+.img_united-1_1{
+    width: 1080px;
+    height: 720px;
+    top: 126px;
+}
+
+/* Untitled-1 3 */
+.untitled-1_3{
+    position: relative;
+    width: 452px;
+    height: 720px;
+    left: -47px;
+    top: 144px;
+    filter: blur(3.5px);
+    
+}
+/* Untitled-5 2 */
+.untitled-5-2{
+    position: relative;
+    width: 450.82px;
+    height: 627.27px;
+    left: 390.35px;
+    top: 375px;
+    transform: rotate(65.4deg);
+}
+/* image 3 */
+.image_3{
+    position: relative;
+    width: 360px;
+    height: 444px;
+    left: 90px;
+    top: 388px;
+    
+}
+/* image 2 */
+.image_2{
+    position: relative;
+    width: 465px;
+    height: 465px;
+    left: 404px;
+    top: 403px;
+
+    
+}
+/* image 1 */
+.image_1{
+    position: relative;
+    width: 393px;
+    height: 393px;
+    left: 695px;
+    top: 335px;
+
+    
+}
+/* Untitled-5 3 */
+.untitled_5_3{
+    position: relative;
+    width: 256.66px;
+    height: 372.44px;
+    left: 1087.83px;
+    top: 388px;
+    transform: matrix(-0.42, 0.91, 0.91, 0.42, 0, 0);
+}
+/* Untitled-1 4 */
+.untitled-1-4{
+    position: relative;
+    width: 374px;
+    height: 727.5px;
+    left: 906px;
+    top: 126px;
+    filter: blur(3.5px);
+
+    
+}
+/* Rectangle 8 */
+.rectangle_8{
+    position: relative;
+    width: 1080px;
+    height: 844.5px;
+    left: 0px;
+    top: 1619px;
+    background: #8F6AA6;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* Conoce a Spidey y sus sorprendentes amigos */
+.title-1{
+    position: relative;
+    width: 646px;
+    height: 114px;
+    left: 100px;
+    top: 994px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 94.5%;
+    /* or 57px */
+
+    color: #FFFFFF;
+}
+/* Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá para ayudar. */
+.p-1{
+    position: relative;
+    width: 586px;
+    height: 154px;
+    left: 100px;
+    top: 1130px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+}
+
+/* Untitled-3 1 */
+.untitled-3_1{
+        position: relative;
+        width: 553px;
+        height: 921px;
+        left: 1265px;
+        top: 907px;
+
+        background: url(Untitled-3.png);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+/* image 16 */
+.image_16{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 751.65px;
+    height: 413.13px;
+    left: 90.28px;
+    top: 1326.72px;
+
+    background: url(image.png);
+    border: 9px solid #FFFFFF;
+    /* Drop Shadow */
+    box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 26px;
+    transform: rotate(-2.22deg);
+}
+
+/* Rectangle 7 */
+.rectangle_7{
+    position: relative;
+    width: 1080px;
+    height: 1085px;
+    left: 0px;
+    top: 2557px;
+
+    background: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* image 13 */
+.image_13{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 332.96px;
+    height: 302.69px;
+    left: 100px;
+    top: 1840px;
+
+    background: url(image.png);
+    /* #2982FF */
+    border: 9px solid #2982FF;
+    /* Drop Shadow */
+    filter: drop-shadow(4px 5px 0px #02187E);
+    border-radius: 41px;
+}
+/* image 24 */
+.image_24{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 332.96px;
+    height: 302.69px;
+    left: 847.04px;
+    top: 1840px;
+
+    background: url(image.png);
+    /* #2982FF */
+    border: 9px solid #2982FF;
+    /* Drop Shadow */
+    filter: drop-shadow(4px 5px 0px #02187E);
+    border-radius: 41px;
+}
+/* image 8 */
+.image_8{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 332.96px;
+    height: 302.69px;
+    left: 473.52px;
+    top: 1840px;
+
+    background: url(image.png);
+    /* #2982FF */
+    border: 9px solid #2982FF;
+    /* Drop Shadow */
+    filter: drop-shadow(4px 5px 0px #02187E);
+    border-radius: 41px;
+}
+.p2{
+    position: relative;
+    width: 333px;
+    height: 218px;
+    left: 100px;
+    top: 2166px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+.p3{
+
+    position: relative;
+    width: 332px;
+    height: 217px;
+    left: 474px;
+    top: 2166px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+.p4{
+
+    position: relative;
+    width: 333px;
+    height: 189px;
+    left: 847px;
+    top: 2166px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+
+}
