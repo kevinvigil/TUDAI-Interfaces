@@ -14,8 +14,6 @@
     background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
 }
 
-
-
 /* Group 1 */
 .group_1{
     margin : 20px 0px 0px 100px;
@@ -35,6 +33,7 @@
     border: 4px solid #2981FF;
     border-radius: 111px;
 }
+
 /* Rectangle 4 */
 .rectangle_4{
     position: relative;
@@ -42,8 +41,7 @@
     height: 4px;
     background: #FFE901;
     border: 4px solid #2981FF;
-    border-radius: 111px;
-    
+    border-radius: 111px;    
 }
 
 /* Rectangle 5 */
@@ -62,8 +60,8 @@
     position: relative;
     width: 590px;
     height: 301px;
-    
 }
+
 /* Rectangle 2 */
 .rectangle_2{
     position: relative;
@@ -112,9 +110,9 @@
     height: 720px;
     left: -47px;
     top: 144px;
-    filter: blur(3.5px);
-    
+    filter: blur(3.5px);    
 }
+
 /* Untitled-5 2 */
 .untitled-5-2{
     position: relative;
@@ -124,35 +122,34 @@
     top: 375px;
     transform: rotate(65.4deg);
 }
+
 /* image 3 */
 .image_3{
     position: relative;
     width: 360px;
     height: 444px;
     left: 90px;
-    top: 388px;
-    
+    top: 388px;    
 }
+
 /* image 2 */
 .image_2{
     position: relative;
     width: 465px;
     height: 465px;
     left: 404px;
-    top: 403px;
-
-    
+    top: 403px;    
 }
+
 /* image 1 */
 .image_1{
     position: relative;
     width: 393px;
     height: 393px;
     left: 695px;
-    top: 335px;
-
-    
+    top: 335px;    
 }
+
 /* Untitled-5 3 */
 .untitled_5_3{
     position: relative;
@@ -162,6 +159,7 @@
     top: 388px;
     transform: matrix(-0.42, 0.91, 0.91, 0.42, 0, 0);
 }
+
 /* Untitled-1 4 */
 .untitled-1-4{
     position: relative;
@@ -169,10 +167,9 @@
     height: 727.5px;
     left: 906px;
     top: 126px;
-    filter: blur(3.5px);
-
-    
+    filter: blur(3.5px);    
 }
+
 /* Rectangle 8 */
 .rectangle_8{
     position: relative;
@@ -191,32 +188,27 @@
     height: 114px;
     left: 100px;
     top: 994px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
     font-size: 60px;
     line-height: 94.5%;
     /* or 57px */
-
     color: #FFFFFF;
 }
-/* Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá para ayudar. */
+
 .p-1{
     position: relative;
     width: 586px;
     height: 154px;
     left: 100px;
     top: 1130px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
     color: #FFFFFF;
-
 }
 
 /* Untitled-3 1 */
@@ -226,20 +218,18 @@
         height: 921px;
         left: 1265px;
         top: 907px;
-
         background: url(Untitled-3.png);
         transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
 /* image 16 */
 .image_16{
     box-sizing: border-box;
-
     position: relative;
     width: 751.65px;
     height: 413.13px;
     left: 90.28px;
     top: 1326.72px;
-
     background: url(image.png);
     border: 9px solid #FFFFFF;
     /* Drop Shadow */
@@ -255,7 +245,6 @@
     height: 1085px;
     left: 0px;
     top: 2557px;
-
     background: #FFFFFF;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
@@ -263,13 +252,11 @@
 /* image 13 */
 .image_13{
     box-sizing: border-box;
-
     position: relative;
     width: 332.96px;
     height: 302.69px;
     left: 100px;
     top: 1840px;
-
     background: url(image.png);
     /* #2982FF */
     border: 9px solid #2982FF;
@@ -280,13 +267,11 @@
 /* image 24 */
 .image_24{
     box-sizing: border-box;
-
     position: relative;
     width: 332.96px;
     height: 302.69px;
     left: 847.04px;
     top: 1840px;
-
     background: url(image.png);
     /* #2982FF */
     border: 9px solid #2982FF;
@@ -294,16 +279,15 @@
     filter: drop-shadow(4px 5px 0px #02187E);
     border-radius: 41px;
 }
+
 /* image 8 */
 .image_8{
     box-sizing: border-box;
-
     position: relative;
     width: 332.96px;
     height: 302.69px;
     left: 473.52px;
     top: 1840px;
-
     background: url(image.png);
     /* #2982FF */
     border: 9px solid #2982FF;
@@ -311,52 +295,124 @@
     filter: drop-shadow(4px 5px 0px #02187E);
     border-radius: 41px;
 }
+
 .p2{
     position: relative;
     width: 333px;
     height: 218px;
     left: 100px;
     top: 2166px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
     color: #000000;
 }
-.p3{
 
+.p3{
     position: relative;
     width: 332px;
     height: 217px;
     left: 474px;
     top: 2166px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
     color: #000000;
 }
-.p4{
 
+.p4{
     position: relative;
     width: 333px;
     height: 189px;
     left: 847px;
     top: 2166px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
     color: #000000;
+}
 
+  /* image 223 */
+.image223{
+    position: relative;
+    width: 1280px;
+    height: 566px;
+    left: 0px;
+    top: 2497px;
+}
+.test{
+/* test */
+    position: relative;
+    width: 546.11px;
+    height: 326.51px;
+    left: 50.87px;
+    top: 2463.57px;
+    background: url(.png);
+    transform: rotate(-13.08deg);
+
+}
+
+.test_1{
+    /* test */
+    position: relative;
+    width: 543.22px;
+    height: 325.79px;
+    left: 35px;
+    top: 2719.56px;
+    background: url(.png);
+    transform: rotate(-26.47deg);
+}
+
+.test_2{
+/* test */
+    position: relative;
+    width: 546.11px;
+    height: 326.51px;
+    left: 66.18px;
+    top: 2987.15px;
+    background: url(.png);
+    transform: rotate(-36.02deg);
+}
+
+.title_2{
+    /* Los vengadores acompañando tu aventura */
+    position: relative;
+    width: 667px;
+    height: 171px;
+    left: 104px;
+    top: 3226px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 94.5%;
+    /* or 57px */
+    color: #FFFFFF;
+}
+
+.untitled-4-1{
+    /* Untitled-4 1 */
+    position: relative;
+    width: 368.31px;
+    height: 552.46px;
+    left: 682.05px;
+    top: 3197px;
+    background: url(Untitled-4.png);
+    transform: rotate(13.61deg);
+}
+
+.image224{
+    /* image 22 4 */
+    position: relative;
+    width: 1077.06px;
+    height: 527.63px;
+    left: 101.76px;
+    top: 3452.11px;
 
 }
