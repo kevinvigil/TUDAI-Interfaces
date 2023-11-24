@@ -1,418 +1,728 @@
-/* Group 2 */
-.header{
-    display:flex;
-    position: relative;
-    width: 1080px;
-    height: 103px;
-}
 
-/* Rectangle 1 */
-.rectangle_1{
-    position: relative;
-    width: 1080px;
-    height: 103px;
-    background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0) 100%);
-}
-
-/* Group 1 */
-.group_1{
-    margin : 20px 0px 0px 100px;
-    position: relative;
-    width: 34px;
-    height: 26px;
-    /* Drop Shadow */
-    filter: drop-shadow(4px 5px 0px #02187E);
-}
-
-/* Rectangle 3 */
-.rectangle_3{
-    position: relative;
-    width: 34px;
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1280px;
+    height: 8968px;
+    overflow-x: hidden;
+    background-color: #000;
+  }
+  
+  html {
+    width: 1280px;
+    background-color: #fff;
+  }
+ 
+  
+  /*contenedor de la primera foto con la foto de fondo del cielo*/
+  .contenedor-img-cielo {
+    position: absolute;
+    top: 126px;
+    width: 1280px;
+    height: 720px;
+    left: 0;
+    background-color: rgb(78,152,247);
+  }
+  
+  #cielo1 {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    flex-shrink: 0;
+  }
+  
+  #header-conteiner {
+    position: absolute ;
+    top: 0;
+    width: 1280px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background: linear-gradient(
+      180deg,
+      #5499f8 0%,
+      #5499f8 87.91%,
+      rgba(84, 153, 248, 0) 100%
+    );
+    z-index: 10;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 8%;
+    padding: 0px;
+    border: 0px;
+  }
+  
+  .barraMenu {
     height: 4px;
-    background: #FFE901;
-    border: 4px solid #2981FF;
-    border-radius: 111px;
-}
-
-/* Rectangle 4 */
-.rectangle_4{
-    position: relative;
     width: 34px;
-    height: 4px;
-    background: #FFE901;
+    background-color: #FFE901;
     border: 4px solid #2981FF;
-    border-radius: 111px;    
-}
-
-/* Rectangle 5 */
-.rectangle_5{
-    position: relative;
-    width: 34px;
-    height: 4px;
-    background: #FFE901;
-    border: 4px solid #2981FF;
-    border-radius: 111px;
-}
-
-/* image 5 1 */
-.img_header_5_1{
-    margin: 91px 0px 0px 330px;
-    position: relative;
+    border-radius: 10px;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    transition: all .5s;
+    transform-origin: left;
+  }
+ 
+  /*la foto de spidey Amazing friends*/
+  #img-logo {
+    left: 330px;
+    position: absolute;
+    top: 91px;
     width: 590px;
     height: 301px;
-}
-
-/* Rectangle 2 */
-.rectangle_2{
-    position: relative;
-    margin: 20px 0px 0px 980px;
+  }
+  #btn-comprar {
+    top: 20px;
+    left: 980px;
+    position: absolute;
     width: 200px;
     height: 50px;
-    background: #FFE901;
-    /* #2982FF */
-    border: 8px solid #2982FF;
-    /* Drop Shadow */
-    box-shadow: 4px 5px 0px #02187E;
+    flex-shrink: 0;
     border-radius: 111px;
-}
-
-/* COMPRAR */
-.comprar{
-    margin: 36px 0px 0px 1023px;
-    position: relative;
-    width: 114px;
-    height: 19px;
-    font-family: 'Lato';
+    border: 8px solid var(--2982-ff, #2982ff);
+    background: #ffe901;
+    box-shadow: 4px 5px 0px 0px #02187e;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /*texto que dice comprar del boton*/
+  #btn-comprar p {
+    margin: 0;
+    text-align: center;
+    color: #02187e;
+    font-size: 20px;
     font-style: normal;
     font-weight: 900;
-    font-size: 20px;
-    line-height: 94.5%;
-    line-height: 19px;
-    text-align: left;
-    /* identical to box height, or 19px */
-    letter-spacing: 0.11em;
-    color: #02187E;
-    border: 1px solid #02187E;
-    font-family: Lato;
-    }
-
-/* Untitled-1 1 */
-.img_united-1_1{
-    width: 1080px;
-    height: 720px;
-    top: 126px;
-}
-
-/* Untitled-1 3 */
-.untitled-1_3{
-    position: relative;
+    line-height: 94.5%; /* 18.9px */
+  }
+  .parallax-layer-edificios{
+    z-index: 4;
+  }
+  /*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
+  #img-edificio1 {
+    position: absolute;
+    top: 18px;
+    margin: 0;
     width: 452px;
     height: 720px;
-    left: -47px;
-    top: 144px;
-    filter: blur(3.5px);    
-}
-
-/* Untitled-5 2 */
-.untitled-5-2{
-    position: relative;
-    width: 450.82px;
-    height: 627.27px;
-    left: 390.35px;
-    top: 375px;
-    transform: rotate(65.4deg);
-}
-
-/* image 3 */
-.image_3{
-    position: relative;
-    width: 360px;
-    height: 444px;
-    left: 90px;
-    top: 388px;    
-}
-
-/* image 2 */
-.image_2{
-    position: relative;
-    width: 465px;
-    height: 465px;
-    left: 404px;
-    top: 403px;    
-}
-
-/* image 1 */
-.image_1{
-    position: relative;
-    width: 393px;
-    height: 393px;
-    left: 695px;
-    top: 335px;    
-}
-
-/* Untitled-5 3 */
-.untitled_5_3{
-    position: relative;
-    width: 256.66px;
-    height: 372.44px;
-    left: 1087.83px;
-    top: 388px;
-    transform: matrix(-0.42, 0.91, 0.91, 0.42, 0, 0);
-}
-
-/* Untitled-1 4 */
-.untitled-1-4{
-    position: relative;
+    filter: blur(3.5px);
+    margin-left: -47px;
+  }
+  
+  #img-edificio2 {
+    top: 508px;
+    position: absolute;
+    left: 392px;
+    width: 543.5px;
+    height: 213.5px;
+    filter: blur(3.5px);
+    margin: 0px;
+  }
+  
+  /*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
+  #img-edificio3 {
+    position: absolute;
+    top: 0px;
+    left: 906px;
     width: 374px;
     height: 727.5px;
-    left: 906px;
-    top: 126px;
-    filter: blur(3.5px);    
-}
-
-/* Rectangle 8 */
-.rectangle_8{
-    position: relative;
-    width: 1080px;
+    z-index: 1;
+  }
+  
+  .img-spiders-aranas {
+    z-index: 5;
+    position: absolute;
+  }
+  
+  #img-spider1 {
+    top: 209px;
+    left: 695px;
+    width: 393px;
+    height: 393px;
+    flex-shrink: 0;
+  }
+  #img-spider2 {
+    top: 277px;
+    left: 404px;
+    width: 465px;
+    height: 465px;
+    flex-shrink: 0;
+    z-index: 5;
+  }
+  
+  #img-spider3 {
+    top: 262px;
+    left: 90px;
+    width: 360px;
+    height: 444px;
+    flex-shrink: 0;
+  }
+  
+  #img-telaraña1 {
+    top: 249px;
+    width: 450.817px;
+    height: 627.274px;
+    margin-left: -180px;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  #img-telaraña2 {
+    margin-top: 262px;
+    margin-left: 981px;
+    width: 298.659px;
+    height: 372.442px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  /*---------------------css segundo contenedor del duende verde(violeta)--------------------*/
+  #cont-duende {
+    position: absolute;
+    top: 775px;
+    width: 1280px;
     height: 844.5px;
-    left: 0px;
-    top: 1619px;
-    background: #8F6AA6;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-/* Conoce a Spidey y sus sorprendentes amigos */
-.title-1{
-    position: relative;
+    fill: #8f6aa6;
+    z-index: 4;
+  }
+  
+  #img-duende {
+    position: absolute;
+    top: 0px;
+    left: 712px;
+    width: 553px;
+    height: 921px;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  
+  #cont-duende h1 {
     width: 646px;
     height: 114px;
-    left: 100px;
-    top: 994px;
-    font-family: 'Lato';
+    position: absolute;
+    margin-top: 219px;
+    left: 83px;
+    z-index: 99;
+    color: #fff;
+    font-family: Lato;
+    font-size: 60px;
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
-    line-height: 94.5%;
-    /* or 57px */
-    color: #FFFFFF;
-}
-
-.p-1{
-    position: relative;
+    line-height: 94.5%; /* 56.7px */
+  }
+  
+  #cont-duende p {
+    top: 337px;
+    left: 84px;
     width: 586px;
     height: 154px;
-    left: 100px;
-    top: 1130px;
-    font-family: 'Lato';
+    position: absolute;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Lato;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-/* Untitled-3 1 */
-.untitled-3_1{
-        position: relative;
-        width: 553px;
-        height: 921px;
-        left: 1265px;
-        top: 907px;
-        background: url(Untitled-3.png);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-/* image 16 */
-.image_16{
-    box-sizing: border-box;
-    position: relative;
-    width: 751.65px;
-    height: 413.13px;
-    left: 90.28px;
-    top: 1326.72px;
-    background: url(image.png);
-    border: 9px solid #FFFFFF;
-    /* Drop Shadow */
-    box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 26px;
-    transform: rotate(-2.22deg);
-}
-
-/* Rectangle 7 */
-.rectangle_7{
-    position: relative;
-    width: 1080px;
+    line-height: normal;
+  }
+  
+  /*-----------------------HISTORIAS DE LOS SPIDERS(tercer contenedor)---------------------*/
+  #game1 {
+    left: 87px;
+    top: 537px;
+    position: absolute;
+    transform: rotate(-2.222deg);
+    flex-shrink: 0;
+    z-index: 0;
+  }
+  
+  #div-mini-historias-3 {
+    top: 1472px;
+    width: 1280px;
     height: 1085px;
-    left: 0px;
-    top: 2557px;
-    background: #FFFFFF;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-/* image 13 */
-.image_13{
-    box-sizing: border-box;
-    position: relative;
-    width: 332.96px;
-    height: 302.69px;
-    left: 100px;
-    top: 1840px;
-    background: url(image.png);
-    /* #2982FF */
-    border: 9px solid #2982FF;
-    /* Drop Shadow */
-    filter: drop-shadow(4px 5px 0px #02187E);
-    border-radius: 41px;
-}
-/* image 24 */
-.image_24{
-    box-sizing: border-box;
-    position: relative;
-    width: 332.96px;
-    height: 302.69px;
-    left: 847.04px;
-    top: 1840px;
-    background: url(image.png);
-    /* #2982FF */
-    border: 9px solid #2982FF;
-    /* Drop Shadow */
-    filter: drop-shadow(4px 5px 0px #02187E);
-    border-radius: 41px;
-}
-
-/* image 8 */
-.image_8{
-    box-sizing: border-box;
-    position: relative;
-    width: 332.96px;
-    height: 302.69px;
-    left: 473.52px;
-    top: 1840px;
-    background: url(image.png);
-    /* #2982FF */
-    border: 9px solid #2982FF;
-    /* Drop Shadow */
-    filter: drop-shadow(4px 5px 0px #02187E);
-    border-radius: 41px;
-}
-
-.p2{
-    position: relative;
+    flex-shrink: 0;
+    background: #ffffff;
+    position: absolute;
+  }
+  
+  #div-mini-historias-3 p {
+    top: 680px;
     width: 333px;
     height: 218px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+  }
+  
+  #txt-peter {
     left: 100px;
-    top: 2166px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.p3{
-    position: relative;
-    width: 332px;
-    height: 217px;
+  }
+  #txt-miles {
     left: 474px;
-    top: 2166px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.p4{
-    position: relative;
-    width: 333px;
-    height: 189px;
+  }
+  #txt-gwen {
     left: 847px;
-    top: 2166px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-}
-
-  /* image 223 */
-.image223{
-    position: relative;
-    width: 1280px;
-    height: 566px;
-    left: 0px;
+  }
+  
+  #historia-peter {
+    top: 368px;
+    left: 100px;
+    position: absolute;
+  }
+  
+  #historia-miles {
+    top: 368px;
+    left: 473px;
+    position: absolute;
+  }
+  #historia-gwen {
+    top: 368px;
+    left: 847px;
+    position: absolute;
+  }
+  
+  /*------------------------------GHOST SPIDER(cuarto contenedor)---------------------------------*/
+  #ghostspider {
     top: 2497px;
-}
-.test{
-/* test */
-    position: relative;
-    width: 546.11px;
-    height: 326.51px;
-    left: 50.87px;
-    top: 2463.57px;
-    background: url(.png);
-    transform: rotate(-13.08deg);
-
-}
-
-.test_1{
-    /* test */
-    position: relative;
-    width: 543.22px;
-    height: 325.79px;
-    left: 35px;
-    top: 2719.56px;
-    background: url(.png);
-    transform: rotate(-26.47deg);
-}
-
-.test_2{
-/* test */
-    position: relative;
-    width: 546.11px;
-    height: 326.51px;
-    left: 66.18px;
-    top: 2987.15px;
-    background: url(.png);
-    transform: rotate(-36.02deg);
-}
-
-.title_2{
-    /* Los vengadores acompañando tu aventura */
-    position: relative;
+    position: absolute;
+  }
+  
+  #race1 {
+    top: -99px;
+    left: 69px;
+    width: 546.108px;
+    height: 326.509px;
+    transform: rotate(-13.078deg);
+    flex-shrink: 0;
+    position: absolute;
+  }
+  
+  #race2 {
+    top: 84px;
+    left: 68px;
+    width: 543.218px;
+    height: 325.787px;
+    transform: rotate(-26.474deg);
+    position: absolute;
+  }
+  #race3 {
+    top: 298px;
+    left: 99px;
+    width: 546.108px;
+    height: 326.509px;
+    transform: rotate(-36.016deg);
+    flex-shrink: 0;
+    position: absolute;
+  }
+  /*--------------------------------------VENGADORES(quinto container)---------------------------------------*/
+  #txt-vengadores {
+    top: 3166px;
+    left: 93px;
     width: 667px;
     height: 171px;
-    left: 104px;
-    top: 3226px;
-    font-family: 'Lato';
+    color: #fff;
+    font-family: Lato;
+    font-size: 60px;
     font-style: normal;
     font-weight: 600;
+    line-height: 94.5%; /* 56.7px */
+    position: absolute;
+  }
+  #elastico {
+    top: 3399px;
+    left: 185px;
+    position: absolute;
+    width: 451.258px;
+    height: 591.442px;
+    transform: rotate(-12.483deg);
+    z-index: 3;
+  }
+  #blackpanter {
+    top: 3233px;
+    left: 612px;
+    width: 368.308px;
+    height: 552.462px;
+    transform: rotate(13.615deg);
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #hulk {
+    left: 799px;
+    top: 3583px;
+    position: absolute;
+    width: 410.106px;
+    height: 437.972px;
+    transform: rotate(7.515deg);
+    z-index: 3;
+  }
+  
+  .imagen-fondo {
+    position: absolute;
+  }
+  
+  #vengadores-fondo3 {
+    left: 101px;
+    top: 3452px;
+    width: 1077.059px;
+    height: 527.626px;
+    z-index: 3;
+  }
+  #vengadores-fondo2 {
+    left: 101px;
+    top: 3452px;
+    width: 1077.059px;
+    height: 527.626px;
+    z-index: 2;
+  }
+  #vengadores-fondo1 {
+    left: 101px;
+    top: 3452px;
+    width: 1077.059px;
+    height: 527.626px;
+    z-index: 1;
+  }
+  
+  /*----------------------------------------MAS AMIGOS MAS DIVERSION(sexto container)---------------------------*/
+  
+  #mas-amigos-fondo {
+    top: 3833.5px;
+    position: absolute;
+    width: 1280px;
+    height: 2194.5px;
+    flex-shrink: 0;
+  }
+  #mas-amigos1 {
+    top: 4213px;
+    left: 104px;
+    position: absolute;
+  }
+  
+  #mas-amigos2 {
+    top: 4616px;
+    left: 108px;
+    position: absolute;
+  }
+  
+  #mas-amigos3 {
+    top: 5042px;
+    left: 100px;
+    position: absolute;
+  }
+  #mas-amigos4 {
+    top: 5555px;
+    left: 104px;
+    position: absolute;
+  }
+  
+  #mas-amigos h1,
+  #mas-amigos p {
+    position: absolute;
+    left: 713px;
+  }
+  
+  #mas-amigos h1 {
+    top: 4047px;
+    left: 104px;
+    position: absolute;
+    width: 802px;
+    color: #000;
+    font-family: Lato;
     font-size: 60px;
-    line-height: 94.5%;
-    /* or 57px */
-    color: #FFFFFF;
-}
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%; /* 56.7px */
+    z-index: 1;
+  }
+  
+  #mas-amigos p {
+    position: absolute;
+    width: 467px;
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; /* 18.9px */
+  }
+  #mas-amigos h2 {
+    left: 713px;
+    color: #000;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; /* 37.8px */
+    position: absolute;
+  }
+  
+  #mas-amigosh1 {
+    top: 4180px;
+    width: 467px;
+  }
+  #mas-amigosh2 {
+    top: 4583px;
+    width: 467px;
+  }
+  #mas-amigosh3 {
+    top: 5005px;
+    width: 467px;
+  }
+  #mas-amigosh4 {
+    top: 5522px;
+    width: 467px;
+  }
+  #mas-amigosp1 {
+    top: 4295px;
+  }
+  #mas-amigosp2 {
+    top: 4698px;
+  }
+  #mas-amigosp3 {
+    top: 5158px;
+  }
+  #mas-amigosp4 {
+    top: 5637px;
+  }
+  
+  /*-----------------------------------GRAN PODER(septimo container)-----------------------*/
+  #gran-poder-compra h1 {
+    top: 6012px;
+    left: 104px;
+    position: absolute;
+    width: 816px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #gran-poder-compra button {
+    top: 6238px;
+    left: 110px;
+    position: absolute;
+    width: 292px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982ff);
+    background: #ffe901;
+    box-shadow: 4px 5px 0px 0px #02187e;
+    transition: all 0.3s ease;
+  }
+  #gran-poder-compra button p,
+  #seccion-email button p {
+    margin: 0;
+    text-align: center;
+    color: #02187e;
+  
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%; /* 18.9px */
+  }
+  /*------------------------------------TRES SPIDERS(octavo contenedor)--------------------*/
+  #fondo-tres-spiders {
+    top: 6275px;
+    width: 1280px;
+    height: 719.861px;
+    position: absolute;
+  }
+  
+  #tres-spiders-gwen {
+    top: 6446px;
+    left: 190px;
+    position: absolute;
+    width: 268px;
+    height: 416.5px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  #tres-spiders-peter {
+    top: 6455px;
+    left: 394px;
+    position: absolute;
+    width: 416.5px;
+    height: 457.5px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  #tres-spiders-miles {
+    top: 6455px;
+    left: 777px;
+    position: absolute;
+    width: 313.5px;
+    height: 398.5px;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  /*---------------------------------SECCION EMAIL(noveno contenedor)-----------------------*/
+  #email-cielo {
+    top: 6994px;
+    position: absolute;
+    width: 1280px;
+    height: 1296px;
+    flex-shrink: 0;
+  }
+  
+  #seccion-email h1 {
+    top: 7106px;
+    left: 232px;
+    position: absolute;
+    width: 816px;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%; /* 56.7px */
+  }
+  #input-form {
+    top: 7363px;
+    left: 250px;
+    position: absolute;
+    width: 562px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982ff;
+    border-bottom: 9px solid #2982ff;
+    border-left: 9px solid #2982ff;
+    background: #fff;
+    box-shadow: 4px 5px 0px 0px #02187e;
+    /*para el texto de adentro*/
+    color: rgba(0, 0, 0, 0.39);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; /* 18.9px */
+    letter-spacing: 2.2px;
+  }
+  #boton-suscribirse {
+    top: 7363px;
+    left: 812px;
+    position: absolute;
+    width: 218px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 0px 50px 50px 0px;
+    border: 9px solid #2982ff;
+    background: #ffe901;
+    box-shadow: 4px 5px 0px 0px #02187e;
+  }
+  #email-p {
+    /*para el texto de adentro del boton*/
+    top: 7482px;
+    left: 302px;
+    position: absolute;
+    width: 578px;
+    height: 95px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 94.5%; /* 18.9px */
+  }
+  #img-rating {
+    top: 7614px;
+    left: 302px;
+    position: absolute;
+    width: 231px;
+    height: 145px;
+    flex-shrink: 0;
+  }
+  #edificios-email {
+    top: 7570px;
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    flex-shrink: 0;
+  }
+  
+  #spider-email2 {
+    top: 8066px;
+    left: 533px;
+    position: absolute;
+    width: 58px;
+    height: 64px;
+    flex-shrink: 0;
+  }/*
 
-.untitled-4-1{
-    /* Untitled-4 1 */
-    position: relative;
-    width: 368.31px;
-    height: 552.46px;
-    left: 682.05px;
-    top: 3197px;
-    background: url(Untitled-4.png);
-    transform: rotate(13.61deg);
-}
-
-.image224{
-    /* image 22 4 */
-    position: relative;
-    width: 1077.06px;
-    height: 527.63px;
-    left: 101.76px;
-    top: 3452.11px;
-
-}
+  /*--------------------------------FOOTER(decimo contenedor)----------------------------*/
+  #plataformas {
+    top: 8290px;
+    position: absolute;
+    width: 1280px;
+    height: 80px;
+    flex-shrink: 0;
+    background: #242424;
+  }
+  #plataformas img {
+    left: 100px;
+    position: absolute;
+    width: 1080px;
+    height: 75px;
+    flex-shrink: 0;
+  }
+  #footer {
+    top: 8370px;
+    position: absolute;
+    width: 1280px;
+    height: 598px;
+    flex-shrink: 0;
+    background-color: #5e5e5d;
+  }
+  #parrafo {
+    left: 100px;
+    position: absolute;
+    width: 820px;
+    color: #fff;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%; /* 18.9px */
+    letter-spacing: 2.2px;
+  }
+  #footer img {
+    top: 437px;
+    left: 100px;
+    width: 212px;
+    height: 41px;
+    flex-shrink: 0;
+    position: absolute;
+  }
+  
+  
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
