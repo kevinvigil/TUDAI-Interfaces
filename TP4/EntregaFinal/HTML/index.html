@@ -8,22 +8,23 @@
     <title>The Spider Man game</title>
 </head>
 <body>
-    <header id="header-conteiner">
-        <div class="menu"> <!--menu hamburguesa-->
+    <header>
+        <div class="menu">
             <div class="hamburguesa"></div>
             <div class="hamburguesa"></div>
             <div class="hamburguesa"></div>
         </div>
         <button id="btn-comprar" class="btn-comprar"><p>COMPRAR</p></button>
         <img src="../IMG/logo.png" alt="logo" id="img-logo"  >
-    <header>
+    </header>
 
     <!--espacio para la barra de navegacion-->
     <!--load-->
     
     <!--el "data-speed" es el tiempo de scroleo  (punto 5)-->
 
-    <div class="contenedor-img-cielo-con-3">
+    <section class="contenedor-img-cielo">
+        <img src="../IMG/logo.png" alt="logo" id="img-logo" class="img-logo">
         <img src="../IMG/cielo.png" id="cielo1"  data-speed="3.5" >
         <img src="../IMG/edificio.png" id="img-edificio1" class="parallax-layer-edificios"  data-speed="3.2" >
         <img src="../IMG/edificio-2.png" id="img-edificio2" class="parallax-layer-edificios"  data-speed="3.2" >
@@ -38,35 +39,44 @@
         <div  id="img-telaraña2">
             <img src="../IMG/telaraña-derecha.png" class="telarañas"   data-speed="2" >
         </div>
-    </div>
+    </section>
 
-    <div id="cont-duende">
-        <h1>Conoce a Spidey y sus sorprendentes amigos</h1>
-        <p>Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá para ayudar.</p>
-        <img src="../IMG/duende-verde.png" id="img-duende">
-        <img src="../IMG/fondo-violeta.png">
-        <img src="../IMG/juego-1.png" id="game1">
-    </div>
+    <section id="cont-duende">
+        <div class="fondo"></div>
+        <div class="contenido">
+            <h1>Conoce a Spidey y sus sorprendentes amigos</h1>
+            <p>Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la seguridad de que un amigo de los Vengadores correrá para ayudar.</p>
+            <img src="../IMG/duende-verde.png" id="img-duende">
+            <img src="../IMG/juego-1.png" id="game1">
+        </div>
+    </section>
 
-    <div id="div-mini-historias-3">
-        <img src="../IMG/historia-peter-1.png" id="historia-peter" class="cards-personajes">
-        <p id="txt-peter" class="cards-personajes">Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran poder conlleva una gran responsabilidad”.</p>
-
-        <img src="../IMG/historia-peter-2.png" id="historia-miles" class="cards-personajes">
-        <p id="txt-miles" class="cards-personajes">Tras la muerte de Peter Parker, es quien toma la identidad de Spider-Man. La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de etnicidad de Spider-Man.</p>
-
-        <img src="../IMG/historia-peter-3.png" id="historia-gwen" class="cards-personajes">
-        <p id="txt-gwen" class="cards-personajes">El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña Radiactiva</p>
-    </div>
-
-    <div id="ghostspider">
+    <section class="mini-historias">
+        <div id="mini-historias">
+            <div>
+                <img src="../IMG/historia-peter-1.png" id="historia-peter" class="cards-personajes">
+                <p id="txt-peter" class="cards-personajes">Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido por una araña radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la expresión ”un gran poder conlleva una gran responsabilidad”.</p>
+            </div>
+            <div>
+                <img src="../IMG/historia-peter-2.png" id="historia-miles" class="cards-personajes">
+                <p id="txt-miles" class="cards-personajes">Tras la muerte de Peter Parker, es quien toma la identidad de Spider-Man. La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de etnicidad de Spider-Man.</p>
+            </div>
+            <div>
+                <img src="../IMG/historia-peter-3.png" id="historia-gwen" class="cards-personajes">
+                <p id="txt-gwen" class="cards-personajes">El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña Radiactiva</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="ghostspider">
         <img src="../IMG/ghost-spider.png">
         <img src="../IMG/carrera-1.png" id="race1" class="cards-race" data-speed="3">
         <img src="../IMG/carrera-2.png" id="race2" class="cards-race" data-speed="3">
         <img src="../IMG/carrera-1.png" id="race3" class="cards-race" data-speed="3">
-    </div>
+    </section>
 
-    <div id="vengadores">
+    <section id="vengadores">
         <p id="txt-vengadores">Los vengadores acompañando tu aventura</p>
         <img src="../IMG/pantera-negra.png" id="blackpanter" class="img-vengadores">
         <img src="../IMG/hulk.png" id="hulk" class="img-vengadores">
@@ -76,9 +86,9 @@
             <img src="../IMG/fondo-vengadores-2.png" class="imagen-fondo" id="vengadores-fondo2">
             <img src="../IMG/fondo-vengadores-3.png" class="imagen-fondo" id="vengadores-fondo3">
         </div>
-    </div>
+    </section>
 
-    <div id="mas-amigos">
+    <section id="mas-amigos">
         <h1>Mas amigos, mas diversión!</h1>
         <img src="../IMG/mas-amigos-fondo.png" id="mas-amigos-fondo">
 
@@ -97,23 +107,23 @@
         <img src="../IMG/mas-amigos-3.png" id="mas-amigos4">
         <h2 id="mas-amigosh4">Derrota a los villanos y diviértete</h2>
         <p id="mas-amigosp4">la diversión está asegurada mientras te enfrentas a los infames villanos de la ciudad de Nueva York. Enfréntate a desafíos épicos, combate a tus enemigos más temibles y disfruta de una experiencia llena de acción y emoción. Cada encuentro con los villanos te sumergirá en una batalla trepidante y te llevará más cerca de convertirte en el auténtico Hombre Araña. Así que, ¿estás listo para derrotar a los villanos y sumergirte en la aventura definitiva de Spider-Man?"</p>
-    </div>
+    </section>
 
-    <div id="gran-poder-compra">
+    <section id="gran-poder-compra">
         <h1>”un gran poder conlleva una gran responsabilidad”</h1>
         <button class="btn-comprar" id="btn-comprar-ahora">
             <p>COMPRAR AHORA</p>
         </button>
-    </div>
+    </section>
 
-    <div id="tres-spiders-mans">
+    <section id="tres-spiders-mans">
         <img src="../IMG/tres-spiders-man-fondo.png" id="fondo-tres-spiders">
         <img src="../IMG/3-spiderman-rosa.png" class="tres-spider" id="tres-spiders-gwen">
         <img src="../IMG/3-spiderman-rojo.png" class="tres-spider" id="tres-spiders-peter">
         <img src="../IMG/3-spiderman-negro.png" class="tres-spider" id="tres-spiders-miles">
-    </div>
+    </section>
     
-    <div id="seccion-email">
+    <section id="seccion-email">
         <img src="../IMG/cielo-mail.png" id="email-cielo">
         <h1>Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
         <div id="form">
@@ -129,11 +139,11 @@
         <img src="../IMG/image 227.png" id="spider-email1">
         <img src="../IMG/image 228.png" id="spider-email2">
         <img src="../IMG/image 239.png" id="spider-email3">
-    </div>
+    </section>
 
-    <div id="plataformas">
+    <section id="plataformas">
         <img src="../IMG/plataformas.png" alt="">
-    </div>
+    </section>
 
     <footer>
         <div id="footer">
@@ -145,6 +155,7 @@
             <img src="../IMG/redes.png">
         </div> 
     </footer>
+    <script src="../JS/script.js"></script>
     <!--script js--> 
 </body>
 </html>
