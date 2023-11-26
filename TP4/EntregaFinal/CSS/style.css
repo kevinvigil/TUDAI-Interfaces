@@ -339,6 +339,14 @@ section.mini-historias{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.cards-race{
+  cursor: pointer;
+}
+
+#race1:hover, #race2:hover, #race3:hover{
+  z-index: 4;
+  scale: 1.3;
+}
 
 #race1 {
   z-index: 1;
@@ -348,6 +356,7 @@ section.mini-historias{
   height: 326.509px;
   transform: rotate(-13.078deg);
   position: absolute;
+  transition: all 0.3s ease-in;
 }
 
 #race2 {
@@ -358,6 +367,7 @@ section.mini-historias{
   height: 325.787px;
   transform: rotate(-26.474deg);
   position: absolute;
+  transition: all 0.3s ease-in;
 }
 #race3 {
   z-index: 3;
@@ -367,6 +377,7 @@ section.mini-historias{
   height: 326.509px;
   transform: rotate(-36.016deg);
   position: absolute;
+  transition: all 0.3s ease-in;
 }
 
 /*--------------------------------------VENGADORES(quinto container)---------------------------------------*/
