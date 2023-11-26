@@ -14,31 +14,31 @@ document.addEventListener("scroll", () => {
 
 document.addEventListener("scroll", () => {
   function clean() {
-    document.querySelectorAll(".imgS6").forEach((s) => {
-      s.classList.remove("showImgS6");
+    document.querySelectorAll(".img").forEach((s) => {
+      s.classList.remove("mostrar");
     });
-    document.querySelectorAll(".textosS6").forEach((s) => {
-      s.classList.remove("showTextoS6");
+    document.querySelectorAll(".texto").forEach((s) => {
+      s.classList.remove("mostrar");
     });
   }
   if (window.scrollY < 4080) {
     clean();
-    document.querySelector("#imgS6-1").classList.add("showImgS6");
-    document.querySelector("#textS6-1").classList.add("showTextoS6");
+    document.querySelector("#img1").classList.add("mostrar");
+    document.querySelector("#text1").classList.add("mostrar");
   }
   if (window.scrollY > 4080 && window.screenY < 4450) {
     clean();
-    document.querySelector("#imgS6-2").classList.add("showImgS6");
-    document.querySelector("#textS6-2").classList.add("showTextoS6");
+    document.querySelector("#img2").classList.add("mostrar");
+    document.querySelector("#text2").classList.add("mostrar");
   }
   if (window.scrollY > 4450 && window.screenY < 4950) {
     clean();
-    document.querySelector("#imgS6-3").classList.add("showImgS6");
-    document.querySelector("#textS6-3").classList.add("showTextoS6");
+    document.querySelector("#img3").classList.add("mostrar");
+    document.querySelector("#text3").classList.add("mostrar");
   }
   if (window.scrollY > 4950) {
     clean();
-    document.querySelector("#imgS6-4").classList.add("showImgS6");
-    document.querySelector("#textS6-4").classList.add("showTextoS6");
+    document.querySelector("#img4").classList.add("mostrar");
+    document.querySelector("#text4").classList.add("mostrar");
   }
 });

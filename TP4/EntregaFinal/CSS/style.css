@@ -444,62 +444,80 @@ section.vengadores div.fondo{
 }
 
 /*----------------------------------------MAS AMIGOS MAS DIVERSION(sexto container)---------------------------*/
-.mas-amigos{
+
+.mas-amigos {
   top: 4000px;
   position: absolute;
-  display: flex;
-  justify-content: center;
 }
 
-.mas-amigos .scroll{
-  display: flex;
-  justify-content: space-between;
+.principal {
+  width: 1080px;
 }
 
-.mas-amigos .scroll .texto , .mas-amigos .scroll .fotos{
-  display: flex;
-  flex-direction: column;
-}
-
-.mas-amigos .scroll .img-mas-amigos{
-  width: 548px;
-  height: 305px;
-}
-
-.mas-amigos .scroll .texto{
-  width: 467px;
-}
-
-.mas-amigos .scroll .texto h2{
-  margin-top: 0;
-}
-
-.mas-amigos h1{
+.principal h1{
   color: #000;
-  position: absolute;
-  top: 107px;
+}
+.principal h2{
   margin: 0;
 }
 
-.mas-amigos .scroll .sec1{
-  position: absolute;
-  top: 236px;
+.mas-amigos > .principal > div {
+  height: 1650px;
 }
 
-.mas-amigos .scroll .sec2{
+.boxImagenes {
+  width: 552px;
+  height: 1650px;
   position: absolute;
-  top: 641.24px;
 }
 
-.mas-amigos .scroll .sec3{
-  position: absolute;
-  top: 1067.24px;
+.imagenes {
+  height: 302px;
+  position: sticky;
+  top: 35%;
 }
 
-.mas-amigos .scroll .sec4{
+.img {
   position: absolute;
-  top: 1583.73px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
+
+.mostrar {
+  z-index: 1;
+  opacity: 1 !important;
+}
+
+#img1 {
+  background-image: url(../IMG/mas-amigos-1.png);
+}
+#img2 {
+  background-image: url(../IMG/mas-amigos-2.png);
+}
+#img3 {
+  background-image: url(../IMG/mas-amigos-3.png);
+}
+#img4 {
+  background-image: url(../IMG/mas-amigos-4.png);
+}
+
+.boxTextos {
+  position: relative;
+  left: 601px;
+  width: 467px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.texto {
+  height: 350px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
 /*-----------------------------------GRAN PODER(septimo container)-----------------------*/
 .gran-poder-compra{
   position: absolute;
