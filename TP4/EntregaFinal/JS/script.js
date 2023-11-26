@@ -12,6 +12,18 @@ document.addEventListener("scroll", () => {
   }
 });
 
+const duendeVerde = document.querySelector("#img-duende");
+window.addEventListener("scroll", function () {
+  const pos = duendeVerde.getBoundingClientRect(); 
+  const desplazamiento = window.scrollY;
+  console.log(pos)
+  if (pos.top < window.innerHeight && pos.bottom > 0) {
+    duendeVerde.style.transform = `translateY(${
+      (desplazamiento - pos.top) * -0.03
+    }px)`;
+  }
+});
+
 document.addEventListener("scroll", () => {
   function clean() {
     document.querySelectorAll(".img").forEach((s) => {
