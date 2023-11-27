@@ -12,6 +12,7 @@ document.addEventListener("scroll", () => {
   }
 });
 
+/*--------------------- duende verde(violeta)--------------------*/
 const duendeVerde = document.querySelector("#img-duende");
 window.addEventListener("scroll", function () {
   const pos = duendeVerde.getBoundingClientRect(); 
@@ -24,6 +25,37 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/*-----------------------HISTORIAS DE LOS SPIDERS---------------------*/
+
+window.addEventListener("scroll", function () {
+  var box = this.document.querySelector("section.mini-historias");
+  var historias = this.document.querySelectorAll("section.mini-historias .historia");
+
+  var altura = window.innerHeight/2.8;
+
+  var distancia = box.getBoundingClientRect().top;
+
+  historias.forEach((h) => {
+    
+    h.classList.add("transform_up")
+
+    if (distancia <= altura) {
+
+      h.classList.add("aparece");
+
+    }else{
+
+      if (h.classList.contains("aparece")) {
+        h.classList.remove("aparece");
+      }
+
+    }
+  })
+  
+
+})
+
+/*------------------------------GHOST SPIDER---------------------------------*/
 const section4 = document.querySelector("#ghostspider");
 const c1 = document.querySelector("#race1");
 const c2 = document.querySelector("#race2");

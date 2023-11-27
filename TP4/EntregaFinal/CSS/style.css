@@ -320,6 +320,19 @@ section.mini-historias{
   flex-direction: column;
 }
 
+section.mini-historias .historia{
+  opacity: 0.5;
+  transition: all 1s;
+}
+
+.transform_up{
+  transform: translateY(30%);
+}
+
+.aparece{
+  opacity: 1 !important;
+  transform: none;
+}
 /*------------------------------GHOST SPIDER(cuarto contenedor)---------------------------------*/
 #ghostspider {
   top: 2497px;
