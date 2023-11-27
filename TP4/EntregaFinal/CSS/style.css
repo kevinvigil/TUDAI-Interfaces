@@ -322,6 +322,17 @@ section.mini-historias{
 
 section.mini-historias .historia{
   opacity: 0.5;
+}
+
+section.mini-historias .historia2{
+  transition: all 0.5s;
+}
+
+section.mini-historias .historia1{
+  transition: all 0.8s;
+}
+
+section.mini-historias .historia3{
   transition: all 1s;
 }
 
