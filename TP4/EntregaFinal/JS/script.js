@@ -95,19 +95,14 @@ const section4 = document.querySelector("#ghostspider");
 const c1 = document.querySelector("#race1");
 const c2 = document.querySelector("#race2");
 const c3 = document.querySelector("#race3");
+
 window.addEventListener("scroll", function () {
-  const pos = section4.getBoundingClientRect(); //devuelve la posicion
+  const pos = section4.getBoundingClientRect();
   const desplazamiento = window.scrollY;
   if (pos.top < window.innerHeight && pos.bottom > 0) {
-    c1.style.transform = `translateY(${
-      (desplazamiento - pos.top) * 0.03
-    }px) rotate(-13.078deg)`;
-    c2.style.transform = `translateY(${
-      (desplazamiento - pos.top) * 0.03
-    }px) rotate(-26.474deg)`;
-    c3.style.transform = `translateY(${
-      (desplazamiento - pos.top) * 0.01
-    }px) rotate(-36.016deg)`;
+    c1.style.transform = "translateY(" + (desplazamiento - pos.top) * 0.03 + "px) rotate(-13.078deg)";
+    c2.style.transform = "translateY(" + (desplazamiento - pos.top) * 0.03 + "px) rotate(-26.474deg)";
+    c3.style.transform = "translateY(" + (desplazamiento - pos.top) * 0.01 + "px) rotate(-36.016deg)";
   }
 });
 
