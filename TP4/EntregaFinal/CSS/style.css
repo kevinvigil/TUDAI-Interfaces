@@ -68,7 +68,8 @@ header img{
   position: relative;
   width: 133px;
   height: 68px;
-  visibility: hidden;
+  margin: 0 33.5px;
+  opacity: 0;
 }
 
 .menu {
@@ -77,6 +78,7 @@ header img{
   justify-content: flex-start;
   padding: 0px;
   border: 0px;
+  margin: 0 83px;
 }
 
 .hamburguesa {
