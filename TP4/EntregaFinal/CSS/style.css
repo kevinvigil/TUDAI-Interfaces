@@ -125,6 +125,14 @@ header img{
   font-weight: 900;
   line-height: 94.5%; /* 18.9px */
 }
+/*punto 10- hover*/
+#btn-comprar:hover,
+#btn-comprar-ahora:hover{
+  background: #2982ff;
+  border: 8px solid #ffe901;
+  transform: scale(1.1);
+ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 .parallax-layer-edificios{
   z-index: 4;
 }
