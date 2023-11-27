@@ -156,20 +156,21 @@ header img{
   margin: 0;
   width: 452px;
   height: 720px;
-  filter: blur(3.5px);
+  position: relative;
+  left: -120px;
 }
 
 #img-edificio2 {
   width: 543.5px;
   height: 213.5px;
-  filter: blur(3.5px);
   margin: 0px;
 }
 
 #img-edificio3 {
   width: 354px;
   height: 727.5px;
-  z-index: 1;
+  position: relative;
+  right: -120px;
 }
 
 .contenedor-img-cielo .spiders{
@@ -198,18 +199,23 @@ header img{
   left: 695px;
   width: 393px;
   height: 393px;
+  transition: all 1.5;
 }
 #img-spider2 {
   top: 380px;
   left: 404px;
   width: 465px;
   height: 465px;
+  transition: all 1.5;
+
 }
 #img-spider3 {
   top: 365px;
   left: 90px;
   width: 360px;
   height: 444px;
+  transition: all 1.5;
+
 }
 
 .tela1, .tela2{
@@ -228,6 +234,19 @@ header img{
   top: 1px;
   right: -257px;
   width: 376px;
+}
+
+/* .transform_back{
+  transform: scale(0.5);
+}
+.transform_forward{
+  transform: scale(1.5);
+} */
+.transform_right{
+  transform: translateX(20%);
+}
+.transform_left{
+  transform: translateX(-20%);
 }
 /*---------------------css segundo contenedor del duende verde(violeta)--------------------*/
 #cont-duende {

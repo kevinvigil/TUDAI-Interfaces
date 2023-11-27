@@ -12,15 +12,42 @@ document.addEventListener("scroll", () => {
   }
 });
 
+/*-------------------contenedor fondo del cielo---------------------*/
+
+const edificio1 = document.querySelector("#img-edificio1");
+const edificio2 = document.querySelector("#img-edificio2");
+const edificio3 = document.querySelector("#img-edificio3");
+const spider1 = document.querySelector("#img-spider1");
+const spider2 = document.querySelector("#img-spider2");
+const spider3 = document.querySelector("#img-spider3");
+const tela1 = document.querySelector("#tela1");
+const tela2 = document.querySelector("#tela2");
+
+window.addEventListener("scroll", function() {
+
+  spider1.style.transform = "translateX(" + (this.window.scrollY * 0.3) + "px)";
+  spider2.style.transform = "scale(" +(1+ (this.window.scrollY * 0.0003)) + ")";
+  spider3.style.transform = "translateX(" + (-this.window.scrollY * 0.3) + "px)";
+
+  edificio1.style.transform = "translateX(" + (this.window.scrollY * 0.3) + "px)";
+  edificio2.style.transform = "scale(" +(1+ (-this.window.scrollY * 0.0002)) + ")";
+  edificio3.style.transform = "translateX(" + (-this.window.scrollY * 0.3) + "px)";
+
+  tela2.style.transform = "translateX(" + (this.window.scrollY * 0.3) + "px)";
+})
+
 /*--------------------- duende verde(violeta)--------------------*/
 const duendeVerde = document.querySelector("#img-duende");
 window.addEventListener("scroll", function () {
+
   const pos = duendeVerde.getBoundingClientRect(); 
   const desplazamiento = window.scrollY;
-  console.log(pos)
+
   if (pos.top < window.innerHeight && pos.bottom > 0) {
+
     duendeVerde.style.transform = `translateY(${
       (desplazamiento - pos.top) * -0.03
+
     }px)`;
   }
 });
