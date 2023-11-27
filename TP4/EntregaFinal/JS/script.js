@@ -5,8 +5,6 @@ const logo = document.querySelector("#img-logo");
 
 document.addEventListener("scroll", () => {
 
-  console.log((0.3+ (this.window.scrollY * 0.00005)));
-
   logo.style.transform = "scale(" +(1 + (this.window.scrollY * -0.006)) + ")";
 
   logo.style.opacity = (1+ (-this.window.scrollY * 0.005));
