@@ -734,6 +734,35 @@ section.email{
   height: 64px;
 }
 
+.boxSpritesheet{
+  z-index: 10;
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  width: 53px;
+  height: 322px;
+  overflow: hidden;
+}
+
+.spritesheet{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.movimiento{
+  animation: movimiento 1s steps(8) infinite;
+}
+
+@keyframes movimiento {
+  form{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /*--------------------------------FOOTER(decimo contenedor)----------------------------*/
 #plataformas {
   top: 8290px;
