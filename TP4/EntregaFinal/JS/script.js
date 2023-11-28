@@ -1,3 +1,25 @@
+window.addEventListener('load', () => {
+  const cont = document.querySelector('.contenedorLoader');
+  const loaderText = document.querySelector('.loader-text');
+
+  let porcentaje = 0;
+  const intervalo = 100; // Actualiza el porcentaje cada 100 ms
+  const duracion = 5000; // Duración total de 5 segundos
+  const pasos = duracion / intervalo;
+
+  const actualizarPorcentaje = () => {
+    porcentaje += 100 / pasos;
+    if (porcentaje <= 100) {
+      loaderText.textContent = Math.round(porcentaje) + '%';
+    } else {
+      clearInterval(animacion);
+      cont.style.opacity = 0;
+      cont.style.visibility = 'hidden';
+    }
+  };
+
+  const animacion = setInterval(actualizarPorcentaje, intervalo);
+});
 const header = document.querySelector("header");
 const logoHeader = document.querySelector("header img");
 
