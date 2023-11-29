@@ -20,6 +20,14 @@ window.addEventListener('load', () => {
 
   const animacion = setInterval(actualizarPorcentaje, intervalo);
 });
+
+let menu = document.getElementById("menu-hamb");
+function toggleMenu(element) {
+    // agregamos o quitamos la clase "clicked" al hacer clic
+    element.classList.toggle("clicked");
+}
+
+
 const header = document.querySelector("header");
 const logoHeader = document.querySelector("header img");
 

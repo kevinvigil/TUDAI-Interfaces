@@ -125,14 +125,16 @@ header img{
   font-weight: 900;
   line-height: 94.5%; /* 18.9px */
 }
+
 /*punto 10- hover*/
 #btn-comprar:hover,
 #btn-comprar-ahora:hover{
   background: #2982ff;
   border: 8px solid #ffe901;
   transform: scale(1.1);
- box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
 .parallax-layer-edificios{
   z-index: 4;
 }
@@ -909,4 +911,25 @@ section.email{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.menu.clicked .hamburguesa:nth-child(1) {
+  background-color: #2981FF;
+  border: 4px solid #FFE901;
+  transform: translateY(4px) translateX(2px) rotate(-40deg);
+  filter:none;
+  z-index: 1;
+}
+
+.menu.clicked .hamburguesa:nth-child(2) {
+  transform: translateX(-300px);
+  filter: none;
+}
+
+.menu.clicked .hamburguesa:nth-child(3) {
+  background-color: #2981FF;
+  border: 4px solid #FFE901;
+  transform: translateY(-20px) rotate(40deg);
+  filter: none;
 }
